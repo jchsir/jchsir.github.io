@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="浩哥辣么帅">
+    <meta name="keyword" content="">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="http://mapp.alicdn.com//1544621171664ngRAjD3dMdm9U9v.png">
+    <link rel="alternate" type="application/atom+xml" title="JCH" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        阿里云CentOS使用PM2部署Node.js开发环境｜JCH&#39;s blog
+        
+    </title>
+
+    <link rel="canonical" href="http://haojen.github.io/2019/03/18/阿里云CentOS使用PM2部署Node-js开发环境/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('http://mapp.alicdn.com//1544782258145297I0kfDbuKZR57.png')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost="true" data-istags="false
+" data-ishome="false">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    JCH
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+                        
+							
+                        <li>
+                            <a href="/tags/">tags</a>
+                        </li>
+							
+						
+                    
+
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img" src="http://mapp.alicdn.com//1544768668332nhdZ7XGH8Hu43Nr.png">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('http://mapp.alicdn.com//1544768668332nhdZ7XGH8Hu43Nr.png');
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>阿里云CentOS使用PM2部署Node.js开发环境</h1>
+                    
+                    <h2 class="subheading">采用yum最简单完整的部署最新最稳定的Node环境</h2>
+                    
+                    <span class="meta">
+                         作者 JCH
+                        <span>
+                          日期 2019-03-18
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#JavaScript" title="JavaScript">JavaScript</a>
+                        
+                        <a class="tag" href="/tags/#Node.js" title="Node.js">Node.js</a>
+                        
+                        <a class="tag" href="/tags/#PM2" title="PM2">PM2</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            阿里云CentOS使用PM2部署Node.js开发环境
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <blockquote>
+<h1 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h1></blockquote>
+<h3 id="CentOS-无法通过-yum-安装新版-nodejs-解决办法"><a href="#CentOS-无法通过-yum-安装新版-nodejs-解决办法" class="headerlink" title="CentOS 无法通过 yum 安装新版 nodejs 解决办法"></a>CentOS 无法通过 yum 安装新版 nodejs 解决办法</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">curl --silent --location https://rpm.nodesource.com/setup_10.x | sudo bash -</span><br></pre></td></tr></table></figure>
+<p>备注：setup_10.x 代表安装V10以上版本的node. 采用yum安装替代编译安装，避过CentOS中gcc gc++的升级，此升级较复杂繁琐。</p>
+<blockquote>
+<h1 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h1></blockquote>
+<h3 id="通过-yum-安装最新稳定版-Node-js"><a href="#通过-yum-安装最新稳定版-Node-js" class="headerlink" title="通过 yum 安装最新稳定版 Node.js"></a>通过 yum 安装最新稳定版 Node.js</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo yum -y install nodejs</span><br></pre></td></tr></table></figure>
+<p>备注：如果以上步骤不能安装 最新版 node，执行以下命令后再执行第二步：<br>sudo yum clean all<br>如果存在多个 nodesoucre，执行以下命令删除，然后重新执行第一第二步：<br>sudo rm -fv /etc/yum.repos.d/nodesource*</p>
+<blockquote>
+<h1 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h1></blockquote>
+<h3 id="快速创建Node-js-Express-App"><a href="#快速创建Node-js-Express-App" class="headerlink" title="快速创建Node.js Express App"></a>快速创建Node.js Express App</h3><p>1.全局安装应用生成器<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install express-generator -g</span><br></pre></td></tr></table></figure></p>
+<p>2.项目名称为 DEMO的项目<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">express DEMO</span><br></pre></td></tr></table></figure></p>
+<p>3.安装&amp;初始化模块<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<h1 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h1></blockquote>
+<h3 id="安装并配置Nginx反向代理"><a href="#安装并配置Nginx反向代理" class="headerlink" title="安装并配置Nginx反向代理"></a>安装并配置Nginx反向代理</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo yum install -y nginx</span><br></pre></td></tr></table></figure>
+<h3 id="配置参考"><a href="#配置参考" class="headerlink" title="配置参考"></a>配置参考</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">          listen 80;</span><br><span class="line">          server_name 120.79.86.174;</span><br><span class="line">          location / &#123;</span><br><span class="line">              # 反向代理到 3000 端口</span><br><span class="line">              proxy_pass http://127.0.0.1:3000;</span><br><span class="line">              add_header Access-Control-Allow-Origin *;</span><br><span class="line">          &#125;</span><br><span class="line">          error_page 404 /404.html;</span><br><span class="line">              location = /40x.html &#123;</span><br><span class="line">          &#125;</span><br><span class="line">          error_page 500 502 503 504 /50x.html;</span><br><span class="line">              location = /50x.html &#123;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<h1 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h1></blockquote>
+<h3 id="安装Node进程管理工具PM2-官方文档"><a href="#安装Node进程管理工具PM2-官方文档" class="headerlink" title="安装Node进程管理工具PM2 官方文档"></a>安装Node进程管理工具PM2 <a href="https://pm2.io/doc/en/runtime/overview/" target="_blank" rel="noopener">官方文档</a></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pm install -g pm2</span><br></pre></td></tr></table></figure>
+<p>配置文件 ：start.json如下格式：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;apps&quot; : [&#123;</span><br><span class="line">        &quot;name&quot;: &quot;Demo&quot;,</span><br><span class="line">        &quot;script&quot;: &quot;bin/www&quot;,</span><br><span class="line">        &quot;instances&quot;: &quot;max&quot;,</span><br><span class="line">        &quot;watch&quot;:[&quot;routes&quot;],</span><br><span class="line">        &quot;exec_mode&quot;: &quot;cluster&quot;,</span><br><span class="line">        &quot;log_date_format&quot;: &quot;HH:mm:ss.SSS&quot;,</span><br><span class="line">        &quot;output&quot;: &quot;/dev/null&quot;,</span><br><span class="line">        &quot;error&quot;: &quot;/dev/null&quot;,</span><br><span class="line">        &quot;log&quot;: &quot;/home/meizhengyi123M/log/appweb.log&quot;,</span><br><span class="line">        &quot;merge_logs&quot;: true,</span><br><span class="line">        &quot;min_uptime&quot;: &quot;200s&quot;,</span><br><span class="line">        &quot;max_restarts&quot;: 1000000,</span><br><span class="line">        &quot;max_memory_restart&quot;: &quot;2000M&quot;,</span><br><span class="line">    &#125;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>启动服务<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pm2 start start.json</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<h1 id="第六步"><a href="#第六步" class="headerlink" title="第六步"></a>第六步</h1></blockquote>
+<h3 id="编译安装MongoDB数据库"><a href="#编译安装MongoDB数据库" class="headerlink" title="编译安装MongoDB数据库"></a>编译安装MongoDB数据库</h3><p>1.下载文件<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-4.0.6.tgz</span><br></pre></td></tr></table></figure></p>
+<p>备注：也可使用yum源安装 sudo yum install mongodb-org 安装的版本旧<br>2.解压文件<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">tar -zxvf mongodb-linux-x86_64-4.0.6.tgz</span><br></pre></td></tr></table></figure></p>
+<p>3.将解压包拷贝到指定目录<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mv  mongodb-linux-x86_64-4.0.6 /usr/local/mongodb</span><br></pre></td></tr></table></figure></p>
+<p>4.进入目录，创建数据库目录<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mkdir -p /data/db</span><br><span class="line">mkdir -p /logs</span><br></pre></td></tr></table></figure></p>
+<p>5.目录下创建 mongodb.conf 配置文件<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">dbpath=/usr/local/mongodb/data</span><br><span class="line">logpath=/usr/local/mongodb/logs/mongodb.log</span><br><span class="line">bind_ip=0.0.0.0</span><br><span class="line">port=37017</span><br><span class="line">fork=true</span><br><span class="line">auth=false</span><br></pre></td></tr></table></figure></p>
+<p>6.启动数据库服务<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">/usr/local/mongodb/bin/mongod -f /usr/local/mongodb/mongodb.conf</span><br></pre></td></tr></table></figure></p>
+<p>7.连接数据库<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">./mongo 127.0.0.1:37017</span><br></pre></td></tr></table></figure></p>
+<p>8.admin下创建超级管理员<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">use admin</span><br><span class="line">db.createUser(&#123;user:&apos;aplus&apos;,pwd:&apos;APlusMC666&apos;,roles:[&#123; &quot;role&quot; : &quot;root&quot;, &quot;db&quot; : &quot;admin&quot; &#125;]&#125;)</span><br><span class="line">//关闭数据库服务</span><br><span class="line">db.shutdownServer()</span><br><span class="line">修改配置文件auth=true</span><br></pre></td></tr></table></figure></p>
+<p>9.重新启动后再次连接数据库<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">./mongo 127.0.0.1:37017 -u aplus -p APlusMC666 --authenticationDatabase admin</span><br></pre></td></tr></table></figure></p>
+<p>备注：数据库无法驱动 可能是没有成功创建data logs目录 不要重复启动</p>
+<p><em>持续更新 CentOS Redis安装 PHP安装&amp;PHP扩展安装</em></p>
+
+                <hr>
+                
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2019/03/18/CentOS开机启动指定服务脚本/" data-toggle="tooltip" data-placement="top" title="CentOS开机启动指定服务脚本">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2018/12/24/史上最全的前端资源汇总/" data-toggle="tooltip" data-placement="top" title="史上最全的前端资源汇总">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+
+                
+
+
+                <!--加入新的评论系统-->
+                
+
+                
+
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#第一步"><span class="toc-text">第一步</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CentOS-无法通过-yum-安装新版-nodejs-解决办法"><span class="toc-text">CentOS 无法通过 yum 安装新版 nodejs 解决办法</span></a></li></ol></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#第二步"><span class="toc-text">第二步</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#通过-yum-安装最新稳定版-Node-js"><span class="toc-text">通过 yum 安装最新稳定版 Node.js</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第三步"><span class="toc-text">第三步</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#快速创建Node-js-Express-App"><span class="toc-text">快速创建Node.js Express App</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第四步"><span class="toc-text">第四步</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装并配置Nginx反向代理"><span class="toc-text">安装并配置Nginx反向代理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置参考"><span class="toc-text">配置参考</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第五步"><span class="toc-text">第五步</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装Node进程管理工具PM2-官方文档"><span class="toc-text">安装Node进程管理工具PM2 官方文档</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第六步"><span class="toc-text">第六步</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#编译安装MongoDB数据库"><span class="toc-text">编译安装MongoDB数据库</span></a></li></ol></li>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5 class="text-center">
+                        <a href="/tags/">FEATURED TAGS</a>
+                    </h5>
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#JavaScript" title="JavaScript">JavaScript</a>
+                        
+                        <a class="tag" href="/tags/#Node.js" title="Node.js">Node.js</a>
+                        
+                        <a class="tag" href="/tags/#PM2" title="PM2">PM2</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <div style="margin-top: 20px;">
+                    <h5 class="text-center">FRIENDS</h5>
+                    <ul class="list-inline text-center">
+                        
+                        <li><a href="http://www.runoob.com/">菜鸟教程</a></li>
+                        
+                        <li><a href="https://www.iconfont.cn/">iconfont</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+
+                
+                    <li>
+                        <a target="_blank" href="/1993/01/09/关于我/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-wechat fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="/1993/01/09/关于我/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-qq fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+
+                
+                    <li>
+                        <a target="_blank" href="https://weibo.com/haohao100">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank" href="https://github.com/jchsir">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; JCH 2019
+                    <br>
+                    <!-- <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span> -->
+                    <!-- <br> -->
+                    <span style="font-size: 12px;">世界很美 而你正好有空</span>
+                    <!-- <a href="https://haojen.github.io/">Haojen Ma</a> -->
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://haojen.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="http://mapp.alicdn.com//1544621171664ngRAjD3dMdm9U9v.png">
+</body>
+
+</html>

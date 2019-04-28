@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="浩哥辣么帅">
+    <meta name="keyword" content="">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="http://mapp.alicdn.com//1544621171664ngRAjD3dMdm9U9v.png">
+    <link rel="alternate" type="application/atom+xml" title="JCH" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        史上最全的前端资源汇总｜JCH&#39;s blog
+        
+    </title>
+
+    <link rel="canonical" href="http://haojen.github.io/2018/12/24/史上最全的前端资源汇总/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('http://mapp.alicdn.com//1544782258145297I0kfDbuKZR57.png')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost="true" data-istags="false
+" data-ishome="false">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    JCH
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+                        
+							
+                        <li>
+                            <a href="/tags/">tags</a>
+                        </li>
+							
+						
+                    
+
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img" src="http://mapp.alicdn.com//1544782258145297I0kfDbuKZR57.png">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('http://mapp.alicdn.com//1544782258145297I0kfDbuKZR57.png')
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>史上最全的前端资源汇总</h1>
+                    
+                    <span class="meta">
+                         作者 JCH
+                        <span>
+                          日期 2018-12-24
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#React" title="React">React</a>
+                        
+                        <a class="tag" href="/tags/#JavaScript" title="JavaScript">JavaScript</a>
+                        
+                        <a class="tag" href="/tags/#HTML5" title="HTML5">HTML5</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            史上最全的前端资源汇总
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <h4 id="1-综合类"><a href="#1-综合类" class="headerlink" title="1.综合类"></a>1.综合类</h4><p>综合类地址</p>
+<p>前端知识体系<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/sb19871023/p/3894452.html" target="_blank" rel="noopener">http://www.cnblogs.com/sb19871023/p/3894452.html</a></p>
+<p>前端知识结构<br><a href="https://link.jianshu.com?t=https://github.com/JacksonTian/fks" target="_blank" rel="noopener">https://github.com/JacksonTian/fks</a></p>
+<p>Web前端开发大系概览<br><a href="https://link.jianshu.com?t=https://github.com/unruledboy/WebFrontEndStack" target="_blank" rel="noopener">https://github.com/unruledboy/WebFrontEndStack</a></p>
+<p>Web前端开发大系概览-中文版<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/unruledboy/p/WebFrontEndStack.html" target="_blank" rel="noopener">http://www.cnblogs.com/unruledboy/p/WebFrontEndStack.html</a></p>
+<p>Web Front-end Stack v2.2<br><a href="https://link.jianshu.com?t=https://raw.githubusercontent.com/unruledboy/WebFrontEndStack/master/Web%20Front%20End%20Stack.png" target="_blank" rel="noopener">https://raw.githubusercontent.com/unruledboy/WebFrontEndStack/master/Web%20Front%20End%20Stack.png</a></p>
+<p>免费的编程中文书籍索引<br><a href="https://link.jianshu.com?t=https://github.com/justjavac/free-programming-books-zh_CN" target="_blank" rel="noopener">https://github.com/justjavac/free-programming-books-zh_CN</a></p>
+<p>前端书籍<br><a href="https://link.jianshu.com?t=https://github.com/dypsilon/frontend-dev-bookmarks" target="_blank" rel="noopener">https://github.com/dypsilon/frontend-dev-bookmarks</a></p>
+<p>前端免费书籍大全<br><a href="https://link.jianshu.com?t=https://github.com/vhf/free-programming-books" target="_blank" rel="noopener">https://github.com/vhf/free-programming-books</a></p>
+<p>前端知识体系<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/sb19871023/p/3894452.html" target="_blank" rel="noopener">http://www.cnblogs.com/sb19871023/p/3894452.html</a></p>
+<p>免费的编程中文书籍索引<br><a href="https://link.jianshu.com?t=https://github.com/justjavac/free-programming-books-zh_CN" target="_blank" rel="noopener">https://github.com/justjavac/free-programming-books-zh_CN</a></p>
+<p>智能社 - 精通JavaScript开发<br><a href="https://link.jianshu.com?t=http://study.163.com/course/introduction/224014.htm" target="_blank" rel="noopener">http://study.163.com/course/introduction/224014.htm</a></p>
+<p>重新介绍 JavaScript（JS 教程）<br><a href="https://link.jianshu.com?t=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/A_re-introduction_to_JavaScript" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/A_re-introduction_to_JavaScript</a></p>
+<p>麻省理工学院公开课：计算机科学及编程导论<br><a href="https://link.jianshu.com?t=http://v.163.com/special/opencourse/bianchengdaolun.html" target="_blank" rel="noopener">http://v.163.com/special/opencourse/bianchengdaolun.html</a></p>
+<p>JavaScript中的this陷阱的最全收集–没有之一<br><a href="https://link.jianshu.com?t=http://segmentfault.com/a/1190000002640298" target="_blank" rel="noopener">http://segmentfault.com/a/1190000002640298</a></p>
+<p>JS函数式编程指南<br><a href="https://link.jianshu.com?t=https://llh911001.gitbooks.io/mostly-adequate-guide-chinese/content/ch1.html" target="_blank" rel="noopener">https://llh911001.gitbooks.io/mostly-adequate-guide-chinese/content/ch1.html</a></p>
+<p>JavaScript Promise迷你书（中文版）<br><a href="https://link.jianshu.com?t=http://liubin.github.io/promises-book" target="_blank" rel="noopener">http://liubin.github.io/promises-book</a></p>
+<p>腾讯移动Web前端知识库<br><a href="https://link.jianshu.com?t=https://github.com/AlloyTeam/Mars" target="_blank" rel="noopener">https://github.com/AlloyTeam/Mars</a></p>
+<p>Front-End-Develop-Guide 前端开发指南<br><a href="https://link.jianshu.com?t=https://github.com/Front-End-Developers-Hunan/Front-End-Develop-Guide" target="_blank" rel="noopener">https://github.com/Front-End-Developers-Hunan/Front-End-Develop-Guide</a></p>
+<p>前端开发笔记本<br><a href="https://link.jianshu.com?t=https://li-xinyang.gitbooks.io/frontend-notebook/content" target="_blank" rel="noopener">https://li-xinyang.gitbooks.io/frontend-notebook/content</a></p>
+<p>大前端工具集 - 聂微东<br><a href="https://link.jianshu.com?t=https://github.com/nieweidong/fetool" target="_blank" rel="noopener">https://github.com/nieweidong/fetool</a></p>
+<p>前端开发者手册<br><a href="https://link.jianshu.com?t=https://dwqs.gitbooks.io/frontenddevhandbook/content" target="_blank" rel="noopener">https://dwqs.gitbooks.io/frontenddevhandbook/content</a></p>
+<h4 id="2-入门类"><a href="#2-入门类" class="headerlink" title="2.入门类"></a>2.入门类</h4><p>入门类地址</p>
+<p>前端入门教程<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/jikey/p/3613082.html" target="_blank" rel="noopener">http://www.cnblogs.com/jikey/p/3613082.html</a></p>
+<p>瘳雪峰的Javascript教程<br><a href="https://link.jianshu.com?t=http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000" target="_blank" rel="noopener">http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000</a></p>
+<p>jQuery基础教程<br><a href="https://link.jianshu.com?t=http://www.imooc.com/view/11" target="_blank" rel="noopener">http://www.imooc.com/view/11</a></p>
+<p>前端工程师必备的PS技能——切图篇<br><a href="https://link.jianshu.com?t=http://www.imooc.com/view/506" target="_blank" rel="noopener">http://www.imooc.com/view/506</a></p>
+<p>结合个人经历总结的前端入门方法<br><a href="https://link.jianshu.com?t=https://github.com/qiu-deqing/FE-learning" target="_blank" rel="noopener">https://github.com/qiu-deqing/FE-learning</a></p>
+<h4 id="3-效果类"><a href="#3-效果类" class="headerlink" title="3.效果类"></a>3.效果类</h4><p>效果类地址</p>
+<p>弹出层<br><a href="https://link.jianshu.com?t=http://www.imooc.com/learn/58" target="_blank" rel="noopener">http://www.imooc.com/learn/58</a></p>
+<p>焦点图轮播特效<br><a href="https://link.jianshu.com?t=http://www.imooc.com/learn/18" target="_blank" rel="noopener">http://www.imooc.com/learn/18</a></p>
+<h4 id="4-工具类"><a href="#4-工具类" class="headerlink" title="4.工具类"></a>4.工具类</h4><p>工具类地址</p>
+<p>css sprite 雪碧图制作<br><a href="https://link.jianshu.com?t=http://www.imooc.com/learn/93" target="_blank" rel="noopener">http://www.imooc.com/learn/93</a></p>
+<p>版本控制入门 – 搬进 Github<br><a href="https://link.jianshu.com?t=http://www.imooc.com/learn/390" target="_blank" rel="noopener">http://www.imooc.com/learn/390</a></p>
+<p>Grunt-beginner前端自动化工具<br><a href="https://link.jianshu.com?t=http://www.imooc.com/learn/30" target="_blank" rel="noopener">http://www.imooc.com/learn/30</a></p>
+<h4 id="5-慕课专题"><a href="#5-慕课专题" class="headerlink" title="5.慕课专题"></a>5.慕课专题</h4><p>慕课专题地址</p>
+<p>张鑫旭 - 慕课系列<br><a href="https://link.jianshu.com?t=http://www.imooc.com/space/teacher/id/197450" target="_blank" rel="noopener">http://www.imooc.com/space/teacher/id/197450</a></p>
+<p>lyn - 慕课系列<br><a href="https://link.jianshu.com?t=http://www.imooc.com/space/teacher/id/104593" target="_blank" rel="noopener">http://www.imooc.com/space/teacher/id/104593</a></p>
+<p>艾伦 - 慕课系列<br><a href="https://link.jianshu.com?t=http://www.imooc.com/space/teacher/id/290139" target="_blank" rel="noopener">http://www.imooc.com/space/teacher/id/290139</a></p>
+<p>碧仔 - Hello，移动WEB<br><a href="https://link.jianshu.com?t=http://www.imooc.com/view/494" target="_blank" rel="noopener">http://www.imooc.com/view/494</a></p>
+<h4 id="6-周报类"><a href="#6-周报类" class="headerlink" title="6.周报类"></a>6.周报类</h4><p>周报类地址</p>
+<p>平安科技移动开发二队技术周报<br><a href="https://link.jianshu.com?t=https://github.com/PaicHyperionDev/MobileDevWeekly" target="_blank" rel="noopener">https://github.com/PaicHyperionDev/MobileDevWeekly</a></p>
+<h4 id="7-开发中心"><a href="#7-开发中心" class="headerlink" title="7.开发中心"></a>7.开发中心</h4><p>开发中心地址</p>
+<p>mozilla js参考<br><a href="https://link.jianshu.com?t=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/JavaScript</a></p>
+<p>chrome开发中心（chrome的内核已转向blink）<br><a href="https://link.jianshu.com?t=https://developer.chrome.com/extensions/api_index.html" target="_blank" rel="noopener">https://developer.chrome.com/extensions/api_index.html</a></p>
+<p>safari开发中心<br><a href="https://link.jianshu.com?t=https://developer.apple.com/library/safari/navigation" target="_blank" rel="noopener">https://developer.apple.com/library/safari/navigation</a></p>
+<p>microsoft js参考<br><a href="https://link.jianshu.com?t=https://msdn.microsoft.com/zh-cn/library/d1et7k7c(v=vs.94.aspx" target="_blank" rel="noopener">https://msdn.microsoft.com/zh-cn/library/d1et7k7c(v=vs.94.aspx</a></p>
+<p>js秘密花园<br><a href="https://link.jianshu.com?t=http://sanshi.me/articles/JavaScript-Garden-CN/html/index.html" target="_blank" rel="noopener">http://sanshi.me/articles/JavaScript-Garden-CN/html/index.html</a></p>
+<p>js秘密花园<br><a href="https://link.jianshu.com?t=http://bonsaiden.github.io/JavaScript-Garden/zh" target="_blank" rel="noopener">http://bonsaiden.github.io/JavaScript-Garden/zh</a></p>
+<p>w3help<br><a href="https://link.jianshu.com?t=http://www.w3help.org" target="_blank" rel="noopener">http://www.w3help.org</a> 综合Bug集合网站</p>
+<h4 id="8-综合搜索"><a href="#8-综合搜索" class="headerlink" title="8.综合搜索"></a>8.综合搜索</h4><p>综合搜索地址</p>
+<p>javascripting<br><a href="https://link.jianshu.com?t=http://www.javascripting.com" target="_blank" rel="noopener">http://www.javascripting.com</a></p>
+<p>各种流行库搜索<br><a href="https://link.jianshu.com?t=http://microjs.com" target="_blank" rel="noopener">http://microjs.com</a></p>
+<h4 id="9-综合API"><a href="#9-综合API" class="headerlink" title="9.综合API"></a>9.综合API</h4><p>综合API地址</p>
+<p>runoob.com-包含各种API集合<br><a href="https://link.jianshu.com?t=http://www.runoob.com" target="_blank" rel="noopener">http://www.runoob.com</a></p>
+<p>开源中国在线API文档合集<br><a href="https://link.jianshu.com?t=http://tool.oschina.net/apidocs" target="_blank" rel="noopener">http://tool.oschina.net/apidocs</a></p>
+<p>devdocs<br><a href="https://link.jianshu.com?t=http://devdocs.io" target="_blank" rel="noopener">http://devdocs.io</a> 英文综合API网站</p>
+<h4 id="10-jQuery"><a href="#10-jQuery" class="headerlink" title="10.jQuery"></a>10.jQuery</h4><p>jQuery地址</p>
+<p>jQuery API 中文文档<br><a href="https://link.jianshu.com?t=http://www.jquery123.com" target="_blank" rel="noopener">http://www.jquery123.com</a></p>
+<p>hemin 在线版<br><a href="https://link.jianshu.com?t=http://hemin.cn/jq" target="_blank" rel="noopener">http://hemin.cn/jq</a></p>
+<p>css88 jq api<br><a href="https://link.jianshu.com?t=http://www.css88.com/jqapi-1.9/on" target="_blank" rel="noopener">http://www.css88.com/jqapi-1.9/on</a></p>
+<p>css88 jqui api<br><a href="https://link.jianshu.com?t=http://www.css88.com/jquery-ui-api" target="_blank" rel="noopener">http://www.css88.com/jquery-ui-api</a></p>
+<p>学习jquery<br><a href="https://link.jianshu.com?t=http://learn.jquery.com" target="_blank" rel="noopener">http://learn.jquery.com</a></p>
+<p>jquery 源码查找<br><a href="https://link.jianshu.com?t=http://james.padolsey.com/jquery" target="_blank" rel="noopener">http://james.padolsey.com/jquery</a></p>
+<h4 id="11-Ecmascript"><a href="#11-Ecmascript" class="headerlink" title="11.Ecmascript"></a>11.Ecmascript</h4><p>Ecmascript地址</p>
+<p>Understanding ECMAScript 6 - Nicholas C. Zakas<br><a href="https://link.jianshu.com?t=https://leanpub.com/understandinges6/read" target="_blank" rel="noopener">https://leanpub.com/understandinges6/read</a></p>
+<p>exploring-es6<br><a href="https://link.jianshu.com?t=https://leanpub.com/exploring-es6/read" target="_blank" rel="noopener">https://leanpub.com/exploring-es6/read</a></p>
+<p>exploring-es6翻译<br><a href="https://link.jianshu.com?t=https://github.com/es6-org/exploring-es6" target="_blank" rel="noopener">https://github.com/es6-org/exploring-es6</a></p>
+<p>exploring-es6翻译后预览<br><a href="https://link.jianshu.com?t=http://es6-org.github.io/exploring-es6" target="_blank" rel="noopener">http://es6-org.github.io/exploring-es6</a></p>
+<p>阮一峰 es6<br><a href="https://link.jianshu.com?t=http://es6.ruanyifeng.com" target="_blank" rel="noopener">http://es6.ruanyifeng.com</a></p>
+<p>阮一峰 Javascript<br><a href="https://link.jianshu.com?t=http://javascript.ruanyifeng.com" target="_blank" rel="noopener">http://javascript.ruanyifeng.com</a></p>
+<p>ECMA-262，第 5 版<br><a href="https://link.jianshu.com?t=http://yanhaijing.com/es5" target="_blank" rel="noopener">http://yanhaijing.com/es5</a></p>
+<p>es5<br><a href="https://link.jianshu.com?t=http://es5.github.io" target="_blank" rel="noopener">http://es5.github.io</a></p>
+<h4 id="12-Js-template"><a href="#12-Js-template" class="headerlink" title="12.Js template"></a>12.Js template</h4><p>Js template地址</p>
+<p>template-chooser<br><a href="https://link.jianshu.com?t=http://garann.github.io/template-chooser" target="_blank" rel="noopener">http://garann.github.io/template-chooser</a></p>
+<p>artTemplate<br><a href="https://link.jianshu.com?t=https://github.com/aui/artTemplate" target="_blank" rel="noopener">https://github.com/aui/artTemplate</a></p>
+<p>tomdjs<br><a href="https://link.jianshu.com?t=https://github.com/aui/tmodjs/blob/master/README.md" target="_blank" rel="noopener">https://github.com/aui/tmodjs/blob/master/README.md</a></p>
+<p>淘宝模板juicer模板<br><a href="https://link.jianshu.com?t=http://juicer.name/docs/docs_zh_cn.html" target="_blank" rel="noopener">http://juicer.name/docs/docs_zh_cn.html</a></p>
+<p>Fxtpl v1.0 繁星前端模板引擎<br><a href="https://link.jianshu.com?t=http://koen301.github.io/fxtpl" target="_blank" rel="noopener">http://koen301.github.io/fxtpl</a></p>
+<p>laytpl<br><a href="https://link.jianshu.com?t=http://laytpl.layui.com" target="_blank" rel="noopener">http://laytpl.layui.com</a></p>
+<p>mozilla - nunjucks<br><a href="https://link.jianshu.com?t=https://github.com/mozilla/nunjucks" target="_blank" rel="noopener">https://github.com/mozilla/nunjucks</a></p>
+<p>Juicer<br><a href="https://link.jianshu.com?t=https://github.com/PaulGuo/Juicer" target="_blank" rel="noopener">https://github.com/PaulGuo/Juicer</a></p>
+<p>dustjs<br><a href="https://link.jianshu.com?t=http://akdubya.github.io/dustjs" target="_blank" rel="noopener">http://akdubya.github.io/dustjs</a></p>
+<p>etpl<br><a href="https://link.jianshu.com?t=http://ecomfe.github.io/etpl" target="_blank" rel="noopener">http://ecomfe.github.io/etpl</a></p>
+<h4 id="13-弹出层"><a href="#13-弹出层" class="headerlink" title="13.弹出层"></a>13.弹出层</h4><p>弹出层地址</p>
+<p>artDialog 最新版<br><a href="https://link.jianshu.com?t=https://github.com/aui/artDialog" target="_blank" rel="noopener">https://github.com/aui/artDialog</a></p>
+<p>artDialog 文档<br><a href="https://link.jianshu.com?t=http://aui.github.io/artDialog/doc/index.html" target="_blank" rel="noopener">http://aui.github.io/artDialog/doc/index.html</a></p>
+<p>google code 下载地址<br><a href="https://link.jianshu.com?t=https://code.google.com/p/artdialog/downloads/list" target="_blank" rel="noopener">https://code.google.com/p/artdialog/downloads/list</a></p>
+<p>贤心弹出层<br><a href="https://link.jianshu.com?t=http://layer.layui.com" target="_blank" rel="noopener">http://layer.layui.com</a></p>
+<p>响应式用户交互组件库<br><a href="https://link.jianshu.com?t=https://github.com/bh-lay/UI" target="_blank" rel="noopener">https://github.com/bh-lay/UI</a></p>
+<p>sweetalert-有css3动画弹出层<br><a href="https://link.jianshu.com?t=http://t4t5.github.io/sweetalert" target="_blank" rel="noopener">http://t4t5.github.io/sweetalert</a></p>
+<h4 id="14-CSS"><a href="#14-CSS" class="headerlink" title="14.CSS"></a>14.CSS</h4><p>CSS地址</p>
+<p>CSS 语法参考<br><a href="https://link.jianshu.com?t=http://tympanus.net/codrops/css_reference" target="_blank" rel="noopener">http://tympanus.net/codrops/css_reference</a></p>
+<p>CSS3动画手册<br><a href="https://link.jianshu.com?t=http://isux.tencent.com/css3/index.html" target="_blank" rel="noopener">http://isux.tencent.com/css3/index.html</a></p>
+<p>腾讯css3动画制作工具<br><a href="https://link.jianshu.com?t=http://isux.tencent.com/css3/tools.html" target="_blank" rel="noopener">http://isux.tencent.com/css3/tools.html</a></p>
+<p>志爷css小工具集合<br><a href="https://link.jianshu.com?t=http://linxz.github.io/tianyizone" target="_blank" rel="noopener">http://linxz.github.io/tianyizone</a></p>
+<p>css3 js 移动大杂烩<br><a href="https://link.jianshu.com?t=http://www.note12.com/category/blog/2014-6-5/538fe0a9f786f1b7019a4dfb" target="_blank" rel="noopener">http://www.note12.com/category/blog/2014-6-5/538fe0a9f786f1b7019a4dfb</a></p>
+<p>bouncejs 触摸库<br><a href="https://link.jianshu.com?t=http://bouncejs.com" target="_blank" rel="noopener">http://bouncejs.com</a></p>
+<p>css3 按钮动画<br><a href="https://link.jianshu.com?t=http://fian.my.id/Waves" target="_blank" rel="noopener">http://fian.my.id/Waves</a></p>
+<p>animate.css<br><a href="https://link.jianshu.com?t=http://daneden.github.io/animate.css" target="_blank" rel="noopener">http://daneden.github.io/animate.css</a></p>
+<p>全局CSS的终结(狗带 [译]<br><a href="https://link.jianshu.com?t=http://www.alloyteam.com/2015/10/8536" target="_blank" rel="noopener">http://www.alloyteam.com/2015/10/8536</a></p>
+<h4 id="15-Angularjs"><a href="#15-Angularjs" class="headerlink" title="15.Angularjs"></a>15.Angularjs</h4><p>Angularjs地址</p>
+<p>Angular.js 的一些学习资源<br><a href="https://link.jianshu.com?t=https://github.com/dolymood/AngularLearning" target="_blank" rel="noopener">https://github.com/dolymood/AngularLearning</a></p>
+<p>angularjs中文社区<br><a href="https://link.jianshu.com?t=http://angularjs.cn" target="_blank" rel="noopener">http://angularjs.cn</a></p>
+<p>Angularjs源码学习<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/xuwenmin888/p/3739096.html" target="_blank" rel="noopener">http://www.cnblogs.com/xuwenmin888/p/3739096.html</a></p>
+<p>Angularjs源码学习<br><a href="https://link.jianshu.com?t=http://www.ifeenan.com/?c=AngularJS" target="_blank" rel="noopener">http://www.ifeenan.com/?c=AngularJS</a></p>
+<p>angular对bootstrap的封装<br><a href="https://link.jianshu.com?t=http://angular-ui.github.io/bootstrap" target="_blank" rel="noopener">http://angular-ui.github.io/bootstrap</a></p>
+<p>angularjs + nodejs<br><a href="https://link.jianshu.com?t=https://cnodejs.org/topic/51404e0f069911196d2e3923" target="_blank" rel="noopener">https://cnodejs.org/topic/51404e0f069911196d2e3923</a></p>
+<p>吕大豹 Angularjs<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/lvdabao/tag/AngularJs" target="_blank" rel="noopener">http://www.cnblogs.com/lvdabao/tag/AngularJs</a></p>
+<p>AngularJS 最佳实践<br><a href="https://link.jianshu.com?t=http://www.infoq.com/cn/news/2013/02/angular-web-app" target="_blank" rel="noopener">http://www.infoq.com/cn/news/2013/02/angular-web-app</a></p>
+<p>Angular的一些扩展指令<br><a href="https://link.jianshu.com?t=http://www.lovelucy.info/angularjs-best-practices.html" target="_blank" rel="noopener">http://www.lovelucy.info/angularjs-best-practices.html</a></p>
+<p>Angular数据绑定原理<br><a href="https://link.jianshu.com?t=https://github.com/Pasvaz/bindonce" target="_blank" rel="noopener">https://github.com/Pasvaz/bindonce</a></p>
+<p>一些扩展Angular UI组件<br><a href="https://link.jianshu.com?t=https://github.com/angular-ui" target="_blank" rel="noopener">https://github.com/angular-ui</a></p>
+<p>Ember和AngularJS的性能测试<br><a href="https://link.jianshu.com?t=http://voidcanvas.com/emberjs-vs-angularjs-performance-testing" target="_blank" rel="noopener">http://voidcanvas.com/emberjs-vs-angularjs-performance-testing</a></p>
+<p>带你走近AngularJS - 基本功能介绍<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/powertoolsteam/p/angularjs-introdection.html" target="_blank" rel="noopener">http://www.cnblogs.com/powertoolsteam/p/angularjs-introdection.html</a></p>
+<p>Angularjs开发指南<br><a href="https://link.jianshu.com?t=http://angular.duapp.com/docs/guide" target="_blank" rel="noopener">http://angular.duapp.com/docs/guide</a></p>
+<p>Angularjs学习<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/amosli/p/3710648.html" target="_blank" rel="noopener">http://www.cnblogs.com/amosli/p/3710648.html</a></p>
+<p>不要带着jQuery的思维去学习AngularJS<br><a href="https://link.jianshu.com?t=http://www.rainweb.cn/article/angularjs-jquery.html" target="_blank" rel="noopener">http://www.rainweb.cn/article/angularjs-jquery.html</a></p>
+<p>angularjs 学习笔记<br><a href="https://link.jianshu.com?t=http://wangjiatao.diandian.com/?tag=angularjs" target="_blank" rel="noopener">http://wangjiatao.diandian.com/?tag=angularjs</a></p>
+<p>angularjs 开发指南<br><a href="https://link.jianshu.com?t=http://www.angularjs.cn/T008" target="_blank" rel="noopener">http://www.angularjs.cn/T008</a></p>
+<p>angularjs 英文资料<br><a href="https://link.jianshu.com?t=https://github.com/jmcunningham/AngularJS-Learning" target="_blank" rel="noopener">https://github.com/jmcunningham/AngularJS-Learning</a></p>
+<p>angular bootstrap<br><a href="https://link.jianshu.com?t=http://angular-ui.github.io/bootstrap" target="_blank" rel="noopener">http://angular-ui.github.io/bootstrap</a></p>
+<p>angular jq mobile<br><a href="https://link.jianshu.com?t=https://github.com/opitzconsulting/jquery-mobile-angular-adapter" target="_blank" rel="noopener">https://github.com/opitzconsulting/jquery-mobile-angular-adapter</a></p>
+<p>angular ui<br><a href="https://link.jianshu.com?t=http://mgcrea.github.io/angular-strap" target="_blank" rel="noopener">http://mgcrea.github.io/angular-strap</a></p>
+<p>整合jQuery Mobile+AngularJS经验谈<br><a href="https://link.jianshu.com?t=http://www.tuicool.com/articles/7ZZVr2" target="_blank" rel="noopener">http://www.tuicool.com/articles/7ZZVr2</a></p>
+<p>有jQuery背景，该如何用AngularJS编程思想<br><a href="https://link.jianshu.com?t=http://blog.jobbole.com/46589/" target="_blank" rel="noopener">http://blog.jobbole.com/46589/</a></p>
+<p>AngularJS在线教程<br><a href="https://link.jianshu.com?t=http://each.sinaapp.com/angular" target="_blank" rel="noopener">http://each.sinaapp.com/angular</a></p>
+<p>angular学习笔记<br><a href="https://link.jianshu.com?t=http://www.zouyesheng.com/angular.html" target="_blank" rel="noopener">http://www.zouyesheng.com/angular.html</a></p>
+<h4 id="16-React"><a href="#16-React" class="headerlink" title="16.React"></a>16.React</h4><p>React地址</p>
+<p>react.js 中文论坛<br><a href="https://link.jianshu.com?t=http://www.react-china.org" target="_blank" rel="noopener">http://www.react-china.org</a></p>
+<p>react.js 官方网址<br><a href="https://link.jianshu.com?t=https://facebook.github.io/react/index.html" target="_blank" rel="noopener">https://facebook.github.io/react/index.html</a></p>
+<p>react.js 官方文档<br><a href="https://link.jianshu.com?t=https://facebook.github.io/react/docs/getting-started.html" target="_blank" rel="noopener">https://facebook.github.io/react/docs/getting-started.html</a></p>
+<p>react.js material UI<br><a href="https://link.jianshu.com?t=http://material-ui.com/#" target="_blank" rel="noopener">http://material-ui.com/#</a></p>
+<p>react.js TouchstoneJS UI<br><a href="https://link.jianshu.com?t=http://touchstonejs.io" target="_blank" rel="noopener">http://touchstonejs.io</a></p>
+<p>react.js amazeui UI<br><a href="https://link.jianshu.com?t=http://amazeui.org/react" target="_blank" rel="noopener">http://amazeui.org/react</a></p>
+<p>React 入门实例教程 - 阮一峰<br><a href="https://link.jianshu.com?t=http://www.ruanyifeng.com/blog/2015/03/react.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2015/03/react.html</a></p>
+<p>React Native 中文版<br><a href="https://link.jianshu.com?t=http://wiki.jikexueyuan.com/project/react-native" target="_blank" rel="noopener">http://wiki.jikexueyuan.com/project/react-native</a></p>
+<p>Webpack 和 React 小书 - 前端乱炖<br><a href="https://link.jianshu.com?t=http://www.html-js.com/article/Fakefish%203053" target="_blank" rel="noopener">http://www.html-js.com/article/Fakefish%203053</a></p>
+<p>Webpack 和 React 小书 - gitbook<br><a href="https://link.jianshu.com?t=https://fakefish.github.io/react-webpack-cookbook" target="_blank" rel="noopener">https://fakefish.github.io/react-webpack-cookbook</a></p>
+<p>webpack<br><a href="https://link.jianshu.com?t=https://github.com/webpack/webpack" target="_blank" rel="noopener">https://github.com/webpack/webpack</a></p>
+<p>Webpack，101入门体验<br><a href="https://link.jianshu.com?t=http://html-js.com/article/3009" target="_blank" rel="noopener">http://html-js.com/article/3009</a></p>
+<p>webpack入门教程<br><a href="https://link.jianshu.com?t=http://html-js.com/article/3113" target="_blank" rel="noopener">http://html-js.com/article/3113</a></p>
+<p>基于webpack搭建前端工程解决方案探索<br><a href="https://link.jianshu.com?t=http://segmentfault.com/a/1190000003499526" target="_blank" rel="noopener">http://segmentfault.com/a/1190000003499526</a></p>
+<p>React原创实战视频教程<br><a href="https://link.jianshu.com?t=http://www.piliyu.com" target="_blank" rel="noopener">http://www.piliyu.com</a></p>
+<h4 id="17-移动端API"><a href="#17-移动端API" class="headerlink" title="17.移动端API"></a>17.移动端API</h4><p>移动端API地址</p>
+<p>99移动端知识集合<br><a href="https://link.jianshu.com?t=https://github.com/jtyjty99999/mobileTech" target="_blank" rel="noopener">https://github.com/jtyjty99999/mobileTech</a></p>
+<p>移动端前端开发知识库<br><a href="https://link.jianshu.com?t=https://github.com/AlloyTeam/Mars" target="_blank" rel="noopener">https://github.com/AlloyTeam/Mars</a></p>
+<p>移动前端的一些坑和解决方法（外观表现）<br><a href="https://link.jianshu.com?t=http://caibaojian.com/mobile-web-bug.html" target="_blank" rel="noopener">http://caibaojian.com/mobile-web-bug.html</a></p>
+<p>【原】移动web资源整理<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/PeunZhang/p/3407453.html" target="_blank" rel="noopener">http://www.cnblogs.com/PeunZhang/p/3407453.html</a></p>
+<p>zepto 1.0 中文手册<br><a href="https://link.jianshu.com?t=http://mweb.baidu.com/zeptoapi" target="_blank" rel="noopener">http://mweb.baidu.com/zeptoapi</a></p>
+<p>zepto 1.0 中文手册<br><a href="https://link.jianshu.com?t=http://www.html-5.cn/Manual/Zepto" target="_blank" rel="noopener">http://www.html-5.cn/Manual/Zepto</a></p>
+<p>zepto 1.1.2<br><a href="https://link.jianshu.com?t=http://www.css88.com/doc/zeptojs_api" target="_blank" rel="noopener">http://www.css88.com/doc/zeptojs_api</a></p>
+<p>zepto 中文注释<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/sky000/archive/2013/03/29/2988952.html" target="_blank" rel="noopener">http://www.cnblogs.com/sky000/archive/2013/03/29/2988952.html</a></p>
+<p>jqmobile 手册<br><a href="https://link.jianshu.com?t=http://app-framework-software.intel.com/api.php" target="_blank" rel="noopener">http://app-framework-software.intel.com/api.php</a></p>
+<p>移动浏览器开发集合<br><a href="https://link.jianshu.com?t=https://github.com/maxzhang/maxzhang.github.com/issues" target="_blank" rel="noopener">https://github.com/maxzhang/maxzhang.github.com/issues</a></p>
+<p>移动开发大杂烩<br><a href="https://link.jianshu.com?t=https://github.com/hoosin/mobile-web-favorites" target="_blank" rel="noopener">https://github.com/hoosin/mobile-web-favorites</a></p>
+<p>微信webview中的一些问题<br><a href="https://link.jianshu.com?t=http://lin-chao.github.io/2014/11/14/%E5%BE%AE%E4%BF%A1webview%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98" target="_blank" rel="noopener">http://lin-chao.github.io/2014/11/14/%E5%BE%AE%E4%BF%A1webview%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98</a></p>
+<h4 id="18-框架"><a href="#18-框架" class="headerlink" title="18. 框架"></a>18. 框架</h4><p>框架地址</p>
+<p>特色的HTML框架可以创建精美的iOS应用<br><a href="https://link.jianshu.com?t=http://framework7.taobao.org" target="_blank" rel="noopener">http://framework7.taobao.org</a></p>
+<p>淘宝SUI<br><a href="https://link.jianshu.com?t=http://m.sui.taobao.org" target="_blank" rel="noopener">http://m.sui.taobao.org</a></p>
+<h4 id="19-avalon"><a href="#19-avalon" class="headerlink" title="19.avalon"></a>19.avalon</h4><p>avalon地址</p>
+<p>avalonjs<br><a href="https://link.jianshu.com?t=http://avalonjs.github.io" target="_blank" rel="noopener">http://avalonjs.github.io</a></p>
+<p>Avalon新一代UI库： OniUI<br><a href="https://link.jianshu.com?t=http://ued.qunar.com/oniui/index.html" target="_blank" rel="noopener">http://ued.qunar.com/oniui/index.html</a></p>
+<p>avalon.oniui-基于avalon的组件库<br><a href="https://link.jianshu.com?t=https://github.com/RubyLouvre/avalon.oniui" target="_blank" rel="noopener">https://github.com/RubyLouvre/avalon.oniui</a></p>
+<h4 id="20-Requriejs"><a href="#20-Requriejs" class="headerlink" title="20.Requriejs"></a>20.Requriejs</h4><p>Requriejs地址</p>
+<p>Javascript模块化编程（一）：模块的写法<br><a href="https://link.jianshu.com?t=http://www.ruanyifeng.com/blog/2012/10/javascript_module.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2012/10/javascript_module.html</a></p>
+<p>Javascript模块化编程（二）：AMD规范<br><a href="https://link.jianshu.com?t=http://www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html</a></p>
+<p>Javascript模块化编程（三）：require.js的用法<br><a href="https://link.jianshu.com?t=http://www.ruanyifeng.com/blog/2012/11/require_js.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2012/11/require_js.html</a></p>
+<p>RequireJS入门（一）<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/snandy/archive/2012/05/22/2513652.html" target="_blank" rel="noopener">http://www.cnblogs.com/snandy/archive/2012/05/22/2513652.html</a></p>
+<p>RequireJS入门（二）<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/snandy/archive/2012/05/23/2513712.html" target="_blank" rel="noopener">http://www.cnblogs.com/snandy/archive/2012/05/23/2513712.html</a></p>
+<p>RequireJS进阶（三）<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/snandy/archive/2012/06/08/2538001.html" target="_blank" rel="noopener">http://www.cnblogs.com/snandy/archive/2012/06/08/2538001.html</a></p>
+<p>requrie源码学习<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/yexiaochai/p/3632580.html" target="_blank" rel="noopener">http://www.cnblogs.com/yexiaochai/p/3632580.html</a></p>
+<p>requrie 入门指南<br><a href="https://link.jianshu.com?t=http://www.oschina.net/translate/getting-started-with-the-requirejs-library" target="_blank" rel="noopener">http://www.oschina.net/translate/getting-started-with-the-requirejs-library</a></p>
+<p>requrieJS 学习笔记<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/yexiaochai/p/3214926.html" target="_blank" rel="noopener">http://www.cnblogs.com/yexiaochai/p/3214926.html</a></p>
+<p>requriejs 其一<br><a href="https://link.jianshu.com?t=http://cyj.me/why-seajs/requirejs/" target="_blank" rel="noopener">http://cyj.me/why-seajs/requirejs/</a></p>
+<p>require backbone结合<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/yexiaochai/p/3221081.html" target="_blank" rel="noopener">http://www.cnblogs.com/yexiaochai/p/3221081.html</a></p>
+<h4 id="21-Seajs"><a href="#21-Seajs" class="headerlink" title="21.Seajs"></a>21.Seajs</h4><p>Seajs地址</p>
+<p>seajs<br><a href="https://link.jianshu.com?t=http://seajs.org" target="_blank" rel="noopener">http://seajs.org</a></p>
+<p>seajs 中文手册<br><a href="https://link.jianshu.com?t=http://cyj.me/why-seajs/zh" target="_blank" rel="noopener">http://cyj.me/why-seajs/zh</a></p>
+<h4 id="22-Less-sass"><a href="#22-Less-sass" class="headerlink" title="22.Less,sass"></a>22.Less,sass</h4><p>Less,sass地址</p>
+<p>sass<br><a href="https://link.jianshu.com?t=http://www.w3cplus.com/sassguide" target="_blank" rel="noopener">http://www.w3cplus.com/sassguide</a></p>
+<p>sass教程-sass中国<br><a href="https://link.jianshu.com?t=http://www.sass.hk" target="_blank" rel="noopener">http://www.sass.hk</a></p>
+<p>Sass 中文文档<br><a href="https://link.jianshu.com?t=http://sass.bootcss.com" target="_blank" rel="noopener">http://sass.bootcss.com</a></p>
+<p>less<br><a href="https://link.jianshu.com?t=http://less.bootcss.com" target="_blank" rel="noopener">http://less.bootcss.com</a></p>
+<h4 id="23-Markdown"><a href="#23-Markdown" class="headerlink" title="23. Markdown"></a>23. Markdown</h4><p>Markdown地址</p>
+<p>Markdown 语法说明 (简体中文版<br><a href="https://link.jianshu.com?t=http://wowubuntu.com/markdown" target="_blank" rel="noopener">http://wowubuntu.com/markdown</a></p>
+<p>markdown入门参考<br><a href="https://link.jianshu.com?t=https://github.com/LearnShare/Learning-Markdown/blob/master/README.md" target="_blank" rel="noopener">https://github.com/LearnShare/Learning-Markdown/blob/master/README.md</a></p>
+<p>gitbook<br><a href="https://link.jianshu.com?t=https://www.gitbook.com" target="_blank" rel="noopener">https://www.gitbook.com</a> 国外的在线markdown可编辑成书</p>
+<p>mdeditor<br><a href="https://link.jianshu.com?t=https://www.zybuluo.com/mdeditor" target="_blank" rel="noopener">https://www.zybuluo.com/mdeditor</a> 一款国内的在线markdown编辑器</p>
+<p>stackedit<br><a href="https://link.jianshu.com?t=https://stackedit.io" target="_blank" rel="noopener">https://stackedit.io</a> 国外的在线markdown编辑器，功能强大，同步云盘</p>
+<p>mditor<br><a href="https://link.jianshu.com?t=http://bh-lay.github.io/mditor" target="_blank" rel="noopener">http://bh-lay.github.io/mditor</a> 一款轻量级的markdown编辑器</p>
+<p>lepture-editor<br><a href="https://link.jianshu.com?t=https://github.com/lepture/editor" target="_blank" rel="noopener">https://github.com/lepture/editor</a></p>
+<p>markdown-editor<br><a href="https://link.jianshu.com?t=https://github.com/jbt/markdown-editor" target="_blank" rel="noopener">https://github.com/jbt/markdown-editor</a></p>
+<h4 id="24-D3"><a href="#24-D3" class="headerlink" title="24. D3"></a>24. D3</h4><p>D3地址</p>
+<p>d3 Tutorials<br><a href="https://link.jianshu.com?t=https://github.com/mbostock/d3/wiki/Tutorials" target="_blank" rel="noopener">https://github.com/mbostock/d3/wiki/Tutorials</a></p>
+<p>Gallery<br><a href="https://link.jianshu.com?t=https://github.com/mbostock/d3/wiki/Gallery" target="_blank" rel="noopener">https://github.com/mbostock/d3/wiki/Gallery</a></p>
+<p>lofter<br><a href="https://link.jianshu.com?t=http://datavisual.lofter.com/post/40cf3a_188e535" target="_blank" rel="noopener">http://datavisual.lofter.com/post/40cf3a_188e535</a></p>
+<p>iteye<br><a href="https://link.jianshu.com?t=http://alanland.iteye.com/blog/1878595" target="_blank" rel="noopener">http://alanland.iteye.com/blog/1878595</a></p>
+<p>ruanyifeng<br><a href="https://link.jianshu.com?t=http://javascript.ruanyifeng.com/library/d3.html" target="_blank" rel="noopener">http://javascript.ruanyifeng.com/library/d3.html</a></p>
+<h4 id="25-兼容性"><a href="#25-兼容性" class="headerlink" title="25. 兼容性"></a>25. 兼容性</h4><p>兼容性地址</p>
+<p>esma 兼容列表<br><a href="https://link.jianshu.com?t=http://kangax.github.io/compat-table/es6" target="_blank" rel="noopener">http://kangax.github.io/compat-table/es6</a></p>
+<p>W3C CSS验证服务<br><a href="https://link.jianshu.com?t=http://jigsaw.w3.org/css-validator/validator.html.zh-cn" target="_blank" rel="noopener">http://jigsaw.w3.org/css-validator/validator.html.zh-cn</a></p>
+<p>caniuse<br><a href="https://link.jianshu.com?t=http://caniuse.com/#index" target="_blank" rel="noopener">http://caniuse.com/#index</a></p>
+<p>csscreator<br><a href="https://link.jianshu.com?t=http://csscreator.com/properties" target="_blank" rel="noopener">http://csscreator.com/properties</a></p>
+<p>microsoft<br><a href="https://link.jianshu.com?t=https://msdn.microsoft.com/zh-cn/library/cc351024(v=vs.85.aspx" target="_blank" rel="noopener">https://msdn.microsoft.com/zh-cn/library/cc351024(v=vs.85.aspx</a></p>
+<p>在线测兼容-移动端<br><a href="https://link.jianshu.com?t=http://www.responsinator.com" target="_blank" rel="noopener">http://www.responsinator.com</a></p>
+<p>emulators<br><a href="https://link.jianshu.com?t=https://www.manymo.com/emulators" target="_blank" rel="noopener">https://www.manymo.com/emulators</a></p>
+<h4 id="26-UI相关"><a href="#26-UI相关" class="headerlink" title="26. UI相关"></a>26. UI相关</h4><p>UI相关地址</p>
+<p>bootcss<br><a href="https://link.jianshu.com?t=http://v3.bootcss.com" target="_blank" rel="noopener">http://v3.bootcss.com</a></p>
+<p>MetroUICSS<br><a href="https://link.jianshu.com?t=http://www.w3cplus.com/MetroUICSS" target="_blank" rel="noopener">http://www.w3cplus.com/MetroUICSS</a></p>
+<p>semantic<br><a href="https://link.jianshu.com?t=http://semantic-ui.com" target="_blank" rel="noopener">http://semantic-ui.com</a></p>
+<p>Buttons<br><a href="https://link.jianshu.com?t=http://alexwolfe.github.io/Buttons" target="_blank" rel="noopener">http://alexwolfe.github.io/Buttons</a></p>
+<p>kitecss<br><a href="https://link.jianshu.com?t=http://hiloki.github.io/kitecss" target="_blank" rel="noopener">http://hiloki.github.io/kitecss</a></p>
+<p>pintuer<br><a href="https://link.jianshu.com?t=http://www.pintuer.com" target="_blank" rel="noopener">http://www.pintuer.com</a></p>
+<p>amazeui<br><a href="https://link.jianshu.com?t=http://amazeui.org" target="_blank" rel="noopener">http://amazeui.org</a></p>
+<p>worldhello<br><a href="https://link.jianshu.com?t=http://www.worldhello.net/gotgithub/index.html" target="_blank" rel="noopener">http://www.worldhello.net/gotgithub/index.html</a></p>
+<p>linuxtoy<br><a href="https://link.jianshu.com?t=http://igit.linuxtoy.org/contents.html" target="_blank" rel="noopener">http://igit.linuxtoy.org/contents.html</a></p>
+<p>gitmagic<br><a href="https://link.jianshu.com?t=http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn" target="_blank" rel="noopener">http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn</a></p>
+<p>rogerdudler<br><a href="https://link.jianshu.com?t=http://rogerdudler.github.io/git-guide/index.zh.html" target="_blank" rel="noopener">http://rogerdudler.github.io/git-guide/index.zh.html</a></p>
+<p>gitref<br><a href="https://link.jianshu.com?t=http://gitref.justjavac.com" target="_blank" rel="noopener">http://gitref.justjavac.com</a></p>
+<p>book<br><a href="https://link.jianshu.com?t=http://git-scm.com/book/zh" target="_blank" rel="noopener">http://git-scm.com/book/zh</a></p>
+<p>gogojimmy<br><a href="https://link.jianshu.com?t=http://gogojimmy.net/2012/01/17/how-to-use-git-1-git-basic" target="_blank" rel="noopener">http://gogojimmy.net/2012/01/17/how-to-use-git-1-git-basic</a></p>
+<h4 id="27-HTTP"><a href="#27-HTTP" class="headerlink" title="27. HTTP"></a>27. HTTP</h4><p>HTTP地址</p>
+<p>HTTP API 设计指南<br><a href="https://link.jianshu.com?t=http://segmentfault.com/bookmark/1230000002521721" target="_blank" rel="noopener">http://segmentfault.com/bookmark/1230000002521721</a></p>
+<h4 id="28-其它API"><a href="#28-其它API" class="headerlink" title="28. 其它API"></a>28. 其它API</h4><p>其它API地址</p>
+<p>javascript流行库汇总<br>javascriptoo</p>
+<p>验证api<br><a href="https://link.jianshu.com?t=http://niceue.com/validator/demo/index.php" target="_blank" rel="noopener">http://niceue.com/validator/demo/index.php</a></p>
+<p>underscore 中文手册<br><a href="https://link.jianshu.com?t=http://www.css88.com/doc/underscore" target="_blank" rel="noopener">http://www.css88.com/doc/underscore</a></p>
+<p>underscore源码分析<br><a href="https://link.jianshu.com?t=http://www.html-js.com/article/Underscorejs-source-code-analysis-of-underscorejs-source-code-analysis%203031" target="_blank" rel="noopener">http://www.html-js.com/article/Underscorejs-source-code-analysis-of-underscorejs-source-code-analysis%203031</a></p>
+<p>underscore源码分析-亚里士朱德的博客<br><a href="https://link.jianshu.com?t=http://yalishizhude.github.io/tags/underscore" target="_blank" rel="noopener">http://yalishizhude.github.io/tags/underscore</a></p>
+<p>underscrejs en api<br><a href="https://link.jianshu.com?t=http://underscorejs.org" target="_blank" rel="noopener">http://underscorejs.org</a></p>
+<p>lodash - underscore的代替品<br><a href="https://link.jianshu.com?t=https://lodash.com" target="_blank" rel="noopener">https://lodash.com</a></p>
+<p>ext4api<br><a href="https://link.jianshu.com?t=http://extjs-doc-cn.github.io/ext4api" target="_blank" rel="noopener">http://extjs-doc-cn.github.io/ext4api</a></p>
+<p>backbone 中文手册<br><a href="https://link.jianshu.com?t=http://www.csser.com/tools/backbone/backbone.js.html" target="_blank" rel="noopener">http://www.csser.com/tools/backbone/backbone.js.html</a></p>
+<p>qwrap手册<br><a href="https://link.jianshu.com?t=http://dev.qwrap.com/resource/js/_docs/" target="_blank" rel="noopener">http://dev.qwrap.com/resource/js/_docs/</a><em>youa/#/qw/base/loadJs</em>.htm</p>
+<p>缓动函数<br><a href="https://link.jianshu.com?t=http://easings.net/zh-cn" target="_blank" rel="noopener">http://easings.net/zh-cn</a></p>
+<p>svg 中文参考<br><a href="https://link.jianshu.com?t=http://www.w3school.com.cn/svg/svg_reference.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/svg/svg_reference.asp</a></p>
+<p>svg mdn参考<br><a href="https://link.jianshu.com?t=https://developer.mozilla.org/en-US/docs/Web/SVG" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/SVG</a></p>
+<p>svg 导出 canvas<br><a href="https://link.jianshu.com?t=https://github.com/gabelerner/canvg" target="_blank" rel="noopener">https://github.com/gabelerner/canvg</a></p>
+<p>svg 导出 png<br><a href="https://link.jianshu.com?t=https://github.com/exupero/saveSvgAsPng" target="_blank" rel="noopener">https://github.com/exupero/saveSvgAsPng</a></p>
+<p>ai-to-svg<br><a href="https://link.jianshu.com?t=http://www.zamzar.com/convert/ai-to-svg" target="_blank" rel="noopener">http://www.zamzar.com/convert/ai-to-svg</a></p>
+<p>localStorage 库<br><a href="https://link.jianshu.com?t=https://github.com/machao/localStorage" target="_blank" rel="noopener">https://github.com/machao/localStorage</a></p>
+<h4 id="29-图表类"><a href="#29-图表类" class="headerlink" title="29. 图表类"></a>29. 图表类</h4><p>图表类地址</p>
+<p>Highcharts 中文API<br><a href="https://link.jianshu.com?t=http://www.hcharts.cn/api/index.php" target="_blank" rel="noopener">http://www.hcharts.cn/api/index.php</a></p>
+<p>Highcharts 英文API<br><a href="https://link.jianshu.com?t=http://api.highcharts.com/highcharts" target="_blank" rel="noopener">http://api.highcharts.com/highcharts</a></p>
+<p>ECharts 百度的图表软件<br><a href="https://link.jianshu.com?t=http://echarts.baidu.com/" target="_blank" rel="noopener">http://echarts.baidu.com/</a></p>
+<p>高德地图<br><a href="https://link.jianshu.com?t=http://lbs.amap.com/api" target="_blank" rel="noopener">http://lbs.amap.com/api</a></p>
+<p>开源的矢量图脚本框架<br><a href="https://link.jianshu.com?t=http://paperjs.org" target="_blank" rel="noopener">http://paperjs.org</a></p>
+<p>svg 地图<br><a href="https://link.jianshu.com?t=http://jvectormap.com" target="_blank" rel="noopener">http://jvectormap.com</a></p>
+<h4 id="30-vue"><a href="#30-vue" class="headerlink" title="30. vue"></a>30. vue</h4><p>vue地址</p>
+<p>Vue<br><a href="https://link.jianshu.com?t=http://cn.vuejs.org" target="_blank" rel="noopener">http://cn.vuejs.org</a></p>
+<p>Vue 论坛<br><a href="https://link.jianshu.com?t=http://forum.vuejs.org" target="_blank" rel="noopener">http://forum.vuejs.org</a></p>
+<p>Vue 入门指南<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/aaronjs/p/3660102.html" target="_blank" rel="noopener">http://www.cnblogs.com/aaronjs/p/3660102.html</a></p>
+<p>Vue 的一些资源索引<br><a href="https://link.jianshu.com?t=http://segmentfault.com/a/1190000000411057" target="_blank" rel="noopener">http://segmentfault.com/a/1190000000411057</a></p>
+<p>awesome-vue<br><a href="https://link.jianshu.com?t=https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">https://github.com/vuejs/awesome-vue</a></p>
+<h4 id="31-正则"><a href="#31-正则" class="headerlink" title="31. 正则"></a>31. 正则</h4><p>正则地址</p>
+<p>JS正则表达式元字符<br><a href="https://link.jianshu.com?t=http://segmentfault.com/a/1190000002471140" target="_blank" rel="noopener">http://segmentfault.com/a/1190000002471140</a></p>
+<p>正则表达式30分钟入门教程<br><a href="https://link.jianshu.com?t=http://deerchao.net/tutorials/regex/regex.htm" target="_blank" rel="noopener">http://deerchao.net/tutorials/regex/regex.htm</a></p>
+<p>MDN-正则表达式<br><a href="https://link.jianshu.com?t=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions</a></p>
+<p>ruanyifeng - RegExp对象<br><a href="https://link.jianshu.com?t=http://javascript.ruanyifeng.com/stdlib/regexp.html" target="_blank" rel="noopener">http://javascript.ruanyifeng.com/stdlib/regexp.html</a></p>
+<p>小胡子哥 - 进阶正则表达式<br><a href="https://link.jianshu.com?t=http://div.io/topic/764?page=1" target="_blank" rel="noopener">http://div.io/topic/764?page=1</a></p>
+<p>is.js<br><a href="https://link.jianshu.com?t=https://github.com/Cedriking/is.js/blob/master/is.js" target="_blank" rel="noopener">https://github.com/Cedriking/is.js/blob/master/is.js</a></p>
+<p>正则在线测试<br><a href="https://link.jianshu.com?t=http://regexper.com" target="_blank" rel="noopener">http://regexper.com</a></p>
+<h4 id="32-ionic"><a href="#32-ionic" class="headerlink" title="32. ionic"></a>32. ionic</h4><p>ionic地址</p>
+<p>ionic<br><a href="https://link.jianshu.com?t=https://github.com/ychow/ionic-guide" target="_blank" rel="noopener">https://github.com/ychow/ionic-guide</a></p>
+<h4 id="33-其它"><a href="#33-其它" class="headerlink" title="33. 其它"></a>33. 其它</h4><p>其它地址</p>
+<p>Mock.js 是一款模拟数据生成器<br><a href="https://link.jianshu.com?t=http://mockjs.com" target="_blank" rel="noopener">http://mockjs.com</a></p>
+<h4 id="34-开发规范"><a href="#34-开发规范" class="headerlink" title="34.开发规范"></a>34.开发规范</h4><p><strong>34.1 前端</strong></p>
+<p>前端地址</p>
+<p>通过分析github代码库总结出来的工程师代码书写习惯<br><a href="https://link.jianshu.com?t=http://alloyteam.github.io/CodeGuide" target="_blank" rel="noopener">http://alloyteam.github.io/CodeGuide</a></p>
+<p>HTML&amp;CSS编码规范 by @mdo<br><a href="https://link.jianshu.com?t=http://codeguide.bootcss.com" target="_blank" rel="noopener">http://codeguide.bootcss.com</a></p>
+<p>团队合作的css命名规范-腾讯AlloyTeam前端团队<br><a href="https://link.jianshu.com?t=http://www.alloyteam.com/2011/10/107" target="_blank" rel="noopener">http://www.alloyteam.com/2011/10/107</a></p>
+<p>前端编码规范之js - by yuwenhui<br><a href="https://link.jianshu.com?t=http://yuwenhui.github.io" target="_blank" rel="noopener">http://yuwenhui.github.io</a></p>
+<p>前端编码规范之js - by 李靖<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/hustskyking/p/javascript-spec.html" target="_blank" rel="noopener">http://www.cnblogs.com/hustskyking/p/javascript-spec.html</a></p>
+<p>前端开发规范手册<br><a href="https://link.jianshu.com?t=http://zhibimo.com/read/Ashu/front-end-style-guide" target="_blank" rel="noopener">http://zhibimo.com/read/Ashu/front-end-style-guide</a></p>
+<p>Airbnb JavaScript 编码规范（简体中文版）<br><a href="https://link.jianshu.com?t=https://github.com/yuche/javascript#table-of-contents" target="_blank" rel="noopener">https://github.com/yuche/javascript#table-of-contents</a></p>
+<p>AMD与CMD规范的区别<br><a href="https://link.jianshu.com?t=http://www.zhihu.com/question/20351507" target="_blank" rel="noopener">http://www.zhihu.com/question/20351507</a></p>
+<p>AMD与CMD规范的区别<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/tugenhua0707/p/3507957.html" target="_blank" rel="noopener">http://www.cnblogs.com/tugenhua0707/p/3507957.html</a></p>
+<p>KISSY 源码规范<br><a href="https://link.jianshu.com?t=http://docs.kissyui.com/1.4/docs/html/tutorials/style-guide/kissy-source-style.html" target="_blank" rel="noopener">http://docs.kissyui.com/1.4/docs/html/tutorials/style-guide/kissy-source-style.html</a></p>
+<p>bt编码规范<br><a href="https://link.jianshu.com?t=http://codeguide.bootcss.com" target="_blank" rel="noopener">http://codeguide.bootcss.com</a></p>
+<p>规范加强版<br><a href="https://link.jianshu.com?t=https://github.com/Suxiaogang/Code_Guide" target="_blank" rel="noopener">https://github.com/Suxiaogang/Code_Guide</a></p>
+<p>前端代码规范 及 最佳实践<br><a href="https://link.jianshu.com?t=http://blog.jobbole.com/79075" target="_blank" rel="noopener">http://blog.jobbole.com/79075</a></p>
+<p>百度前端规范<br><a href="https://link.jianshu.com?t=http://coderlmn.github.io/code-standards" target="_blank" rel="noopener">http://coderlmn.github.io/code-standards</a></p>
+<p>百度前端规范<br><a href="https://link.jianshu.com?t=http://isobar-idev.github.io/code-standards" target="_blank" rel="noopener">http://isobar-idev.github.io/code-standards</a></p>
+<p>百度前端规范<br><a href="https://link.jianshu.com?t=http://zhuanlan.zhihu.com/fuyun/19884834" target="_blank" rel="noopener">http://zhuanlan.zhihu.com/fuyun/19884834</a></p>
+<p>ECMAScript6 编码规范–广发证券前端团队<br><a href="https://link.jianshu.com?t=https://github.com/gf-rd/es6-coding-style" target="_blank" rel="noopener">https://github.com/gf-rd/es6-coding-style</a></p>
+<p>JavaScript 风格指南/编码规范（Airbnb公司版）<br><a href="https://link.jianshu.com?t=http://blog.jobbole.com/79484" target="_blank" rel="noopener">http://blog.jobbole.com/79484</a></p>
+<p>网易前端开发规范<br><a href="https://link.jianshu.com?t=http://nec.netease.com/standard" target="_blank" rel="noopener">http://nec.netease.com/standard</a></p>
+<p>css模块<br><a href="https://link.jianshu.com?t=http://www.75team.com/archives/1049" target="_blank" rel="noopener">http://www.75team.com/archives/1049</a></p>
+<p>前端规范资源列表<br><a href="https://link.jianshu.com?t=https://github.com/ecomfe/spec" target="_blank" rel="noopener">https://github.com/ecomfe/spec</a></p>
+<p><strong>34.2 PHP</strong></p>
+<p>PHP地址</p>
+<p>最流行的PHP 代码规范<br><a href="https://link.jianshu.com?t=http://segmentfault.com/a/1190000000443795" target="_blank" rel="noopener">http://segmentfault.com/a/1190000000443795</a></p>
+<p>最流行的PHP 代码规范<br><a href="https://link.jianshu.com?t=https://github.com/hfcorriez/fig-standards/blob/zh_CN/%E6%8E%A5%E5%8F%97/PSR-2-coding-style-guide.md" target="_blank" rel="noopener">https://github.com/hfcorriez/fig-standards/blob/zh_CN/%E6%8E%A5%E5%8F%97/PSR-2-coding-style-guide.md</a></p>
+<p><strong>34.3 Android</strong></p>
+<p>Android地址</p>
+<p>【敏捷开发】Android团队开发规范<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/lcw/p/3619181.html" target="_blank" rel="noopener">http://www.cnblogs.com/lcw/p/3619181.html</a></p>
+<p>Android 开发规范与应用<br><a href="https://www.jianshu.com/p/4390f4fe19b3" target="_blank" rel="noopener">http://www.jianshu.com/p/4390f4fe19b3</a></p>
+<h4 id="35-各大公司开源项目"><a href="#35-各大公司开源项目" class="headerlink" title="35. 各大公司开源项目"></a>35. 各大公司开源项目</h4><p>各大公司开源项目地址</p>
+<p>Facebook Projects<br><a href="https://link.jianshu.com?t=https://code.facebook.com/projects/web" target="_blank" rel="noopener">https://code.facebook.com/projects/web</a></p>
+<p>百度web前端研发部<br><a href="https://link.jianshu.com?t=http://fex.baidu.com" target="_blank" rel="noopener">http://fex.baidu.com</a></p>
+<p>百度EFE<br><a href="https://link.jianshu.com?t=http://efe.baidu.com" target="_blank" rel="noopener">http://efe.baidu.com</a></p>
+<p>百度github<br><a href="https://link.jianshu.com?t=https://github.com/fex-team" target="_blank" rel="noopener">https://github.com/fex-team</a></p>
+<p>alloyteam<br><a href="https://link.jianshu.com?t=http://www.alloyteam.com" target="_blank" rel="noopener">http://www.alloyteam.com</a></p>
+<p>alloyteam-github<br><a href="https://link.jianshu.com?t=http://alloyteam.github.io" target="_blank" rel="noopener">http://alloyteam.github.io</a></p>
+<p>alloyteam-AlloyGameEngine<br><a href="https://link.jianshu.com?t=https://github.com/AlloyTeam/AlloyGameEngine" target="_blank" rel="noopener">https://github.com/AlloyTeam/AlloyGameEngine</a></p>
+<p>AlloyDesigner<br><a href="https://link.jianshu.com?t=http://alloyteam.github.io/AlloyDesigner" target="_blank" rel="noopener">http://alloyteam.github.io/AlloyDesigner</a> 即时修改，即时保存，设计稿较正，其它开发辅助工具</p>
+<p>H5交互页编辑器AEditor介绍<br><a href="https://link.jianshu.com?t=http://www.alloyteam.com/2015/06/h5-jiao-hu-ye-bian-ji-qi-aeditor-jie-shao" target="_blank" rel="noopener">http://www.alloyteam.com/2015/06/h5-jiao-hu-ye-bian-ji-qi-aeditor-jie-shao</a> H5动画交互页开发的工具介绍</p>
+<p>AEditor<br><a href="https://link.jianshu.com?t=http://aeditor.alloyteam.com" target="_blank" rel="noopener">http://aeditor.alloyteam.com</a> H5动画交互页开发的工具</p>
+<p>maka<br><a href="https://link.jianshu.com?t=http://forum.maka.im/wordpress" target="_blank" rel="noopener">http://forum.maka.im/wordpress</a></p>
+<p>值得订阅的weekly<br><a href="https://link.jianshu.com?t=https://github.com/fenbility/weekly-feed" target="_blank" rel="noopener">https://github.com/fenbility/weekly-feed</a></p>
+<p>腾讯html5<br><a href="https://link.jianshu.com?t=http://cube.qq.com" target="_blank" rel="noopener">http://cube.qq.com</a></p>
+<p>奇舞团开源项目<br><a href="https://link.jianshu.com?t=http://75team.github.io" target="_blank" rel="noopener">http://75team.github.io</a></p>
+<p>Qunar UED<br><a href="https://link.jianshu.com?t=http://ued.qunar.com" target="_blank" rel="noopener">http://ued.qunar.com</a></p>
+<p>Scrat<br><a href="https://link.jianshu.com?t=http://scrat.io" target="_blank" rel="noopener">http://scrat.io</a></p>
+<h4 id="36-生活常用"><a href="#36-生活常用" class="headerlink" title="36. 生活常用"></a>36. 生活常用</h4><p>常用地址</p>
+<p>ieBetter.js-让IE6-IE8拥有IE9+,Chrome等浏览器特性<br><a href="https://link.jianshu.com?t=http://www.zhangxinxu.com/wordpress/2013/12/iebetter-js-make-ie6-ie8-like-modern-browser-ie9-chrome" target="_blank" rel="noopener">http://www.zhangxinxu.com/wordpress/2013/12/iebetter-js-make-ie6-ie8-like-modern-browser-ie9-chrome</a></p>
+<p>模拟键盘<br><a href="https://link.jianshu.com?t=http://mottie.github.io/Keyboard" target="_blank" rel="noopener">http://mottie.github.io/Keyboard</a></p>
+<p>拼音<br><a href="https://link.jianshu.com?t=https://github.com/hotoo/pinyin" target="_blank" rel="noopener">https://github.com/hotoo/pinyin</a></p>
+<p>中国个人身份证号验证<br><a href="https://link.jianshu.com?t=https://github.com/mc-zone/IDValidator" target="_blank" rel="noopener">https://github.com/mc-zone/IDValidator</a></p>
+<h4 id="37-算法"><a href="#37-算法" class="headerlink" title="37. 算法"></a>37. 算法</h4><p>算法地址</p>
+<p>数据结构与算法 JavaScript 描述. 章节练习<br><a href="https://link.jianshu.com?t=https://github.com/Ralph-Wang/algorithm.in.js" target="_blank" rel="noopener">https://github.com/Ralph-Wang/algorithm.in.js</a></p>
+<p>常见排序算法（JS版）<br><a href="https://link.jianshu.com?t=https://github.com/twobin/twobinSort" target="_blank" rel="noopener">https://github.com/twobin/twobinSort</a></p>
+<p>经典排序<br><a href="https://link.jianshu.com?t=https://github.com/luofei2011/jsAgm/blob/master/js/sort.js" target="_blank" rel="noopener">https://github.com/luofei2011/jsAgm/blob/master/js/sort.js</a></p>
+<p>常见排序算法-js版本<br><a href="https://link.jianshu.com?t=https://github.com/hechangmin/jssort" target="_blank" rel="noopener">https://github.com/hechangmin/jssort</a></p>
+<p>JavaScript 算法与数据结构 精华集<br><a href="https://link.jianshu.com?t=https://github.com/lightningtgc/JavaScript-Algorithms" target="_blank" rel="noopener">https://github.com/lightningtgc/JavaScript-Algorithms</a></p>
+<p>面试常考算法题精讲<br><a href="https://link.jianshu.com?t=http://www.nowcoder.com/live/courses" target="_blank" rel="noopener">http://www.nowcoder.com/live/courses</a></p>
+<h4 id="38-移动端"><a href="#38-移动端" class="headerlink" title="38. 移动端"></a>38. 移动端</h4><p>移动端地址</p>
+<p>fastclick<br><a href="https://link.jianshu.com?t=https://github.com/ftlabs/fastclick" target="_blank" rel="noopener">https://github.com/ftlabs/fastclick</a></p>
+<p>no-click-delay<br><a href="https://link.jianshu.com?t=https://github.com/mmastrac/jquery-noclickdelay" target="_blank" rel="noopener">https://github.com/mmastrac/jquery-noclickdelay</a></p>
+<h4 id="39-JSON"><a href="#39-JSON" class="headerlink" title="39. JSON"></a>39. JSON</h4><p>JSON地址</p>
+<p>模拟生成JSON数据<br><a href="https://link.jianshu.com?t=http://beta.json-generator.com" target="_blank" rel="noopener">http://beta.json-generator.com</a></p>
+<p>返回跨域JSONAPI<br><a href="https://link.jianshu.com?t=http://jsonp.afeld.me" target="_blank" rel="noopener">http://jsonp.afeld.me</a></p>
+<h4 id="40-Html5"><a href="#40-Html5" class="headerlink" title="40. Html5"></a>40. Html5</h4><p>Html5地址</p>
+<p>HTML5 有哪些让你惊艳的 demo？<br><a href="https://link.jianshu.com?t=http://www.zhihu.com/question/24398907" target="_blank" rel="noopener">http://www.zhihu.com/question/24398907</a></p>
+<h4 id="41-CSS"><a href="#41-CSS" class="headerlink" title="41. CSS"></a>41. CSS</h4><p>CSS地址</p>
+<p>browserhacks<br><a href="https://link.jianshu.com?t=http://browserhacks.com" target="_blank" rel="noopener">http://browserhacks.com</a></p>
+<h4 id="42-焦点图"><a href="#42-焦点图" class="headerlink" title="42. 焦点图"></a>42. 焦点图</h4><p>焦点图地址</p>
+<p>myfocus<br><a href="https://link.jianshu.com?t=https://github.com/koen301/myfocus" target="_blank" rel="noopener">https://github.com/koen301/myfocus</a></p>
+<p>myfocus-官方演示站<br><a href="https://link.jianshu.com?t=http://www.chhua.com/myfocus" target="_blank" rel="noopener">http://www.chhua.com/myfocus</a></p>
+<p>SuperSlidev2.1 – 大话主席<br><a href="https://link.jianshu.com?t=http://www.superslide2.com" target="_blank" rel="noopener">http://www.superslide2.com</a></p>
+<p>soChange<br><a href="https://link.jianshu.com?t=http://www.bujichong.com/sojs/soChange/index.html" target="_blank" rel="noopener">http://www.bujichong.com/sojs/soChange/index.html</a></p>
+<h4 id="43-Ext-EasyUI-J-UI-及其它各种UI方案"><a href="#43-Ext-EasyUI-J-UI-及其它各种UI方案" class="headerlink" title="43. Ext, EasyUI, J-UI 及其它各种UI方案"></a>43. Ext, EasyUI, J-UI 及其它各种UI方案</h4><p><strong>43.1 Ext</strong></p>
+<p>Ext, EasyUI, J-UI 及其它各种UI方案地址</p>
+<p>extjs<br><a href="https://link.jianshu.com?t=https://www.sencha.com/products/extjs" target="_blank" rel="noopener">https://www.sencha.com/products/extjs</a></p>
+<p>ext4英文api<br><a href="https://link.jianshu.com?t=http://docs.sencha.com/extjs/4.0.7" target="_blank" rel="noopener">http://docs.sencha.com/extjs/4.0.7</a></p>
+<p>ext4中文api<br><a href="https://link.jianshu.com?t=http://extjs-doc-cn.github.io/ext4api" target="_blank" rel="noopener">http://extjs-doc-cn.github.io/ext4api</a></p>
+<p><strong>43.2 EasyUI</strong></p>
+<p>EasyUI地址</p>
+<p>jquery easyui 未压缩源代码<br><a href="https://link.jianshu.com?t=http://jquery-easyui.googlecode.com/svn/trunk/src" target="_blank" rel="noopener">http://jquery-easyui.googlecode.com/svn/trunk/src</a></p>
+<p><strong>43.3 J-UI</strong></p>
+<p>J-UI地址</p>
+<p>J-UI<br><a href="https://link.jianshu.com?t=http://jui.org" target="_blank" rel="noopener">http://jui.org</a></p>
+<p><strong>43.4 Other</strong></p>
+<p>Other地址</p>
+<p>MUI-最接近原生APP体验的高性能前端框架<br><a href="https://link.jianshu.com?t=http://dcloudio.github.io/mui" target="_blank" rel="noopener">http://dcloudio.github.io/mui</a></p>
+<p>Amaze UI<br>中国首个开源 HTML5 跨屏前端框架<br><a href="https://link.jianshu.com?t=http://amazeui.org" target="_blank" rel="noopener">http://amazeui.org</a></p>
+<p>淘宝 HTML5 前端框架<br><a href="https://link.jianshu.com?t=http://m.sui.taobao.org" target="_blank" rel="noopener">http://m.sui.taobao.org</a></p>
+<p>KISSY - 阿里前端JavaScript库<br><a href="https://link.jianshu.com?t=http://docs.kissyui.com" target="_blank" rel="noopener">http://docs.kissyui.com</a></p>
+<p>网易Nej - Nice Easy Javascript<br><a href="https://link.jianshu.com?t=http://nej.netease.com" target="_blank" rel="noopener">http://nej.netease.com</a></p>
+<p>Kendo UI MVVM Demo<br><a href="https://link.jianshu.com?t=http://demos.telerik.com/kendo-ui/mvvm/index" target="_blank" rel="noopener">http://demos.telerik.com/kendo-ui/mvvm/index</a></p>
+<p>Bootstrap<br><a href="https://link.jianshu.com?t=http://www.bootcss.com" target="_blank" rel="noopener">http://www.bootcss.com</a></p>
+<p>Smart UI<br><a href="https://link.jianshu.com?t=http://smartui.chinamzz.com" target="_blank" rel="noopener">http://smartui.chinamzz.com</a></p>
+<p>雅虎UI - CSS UI<br><a href="https://link.jianshu.com?t=http://developer.yahoo.com/yui/grids" target="_blank" rel="noopener">http://developer.yahoo.com/yui/grids</a></p>
+<h4 id="44-页面-社会化-分享功能"><a href="#44-页面-社会化-分享功能" class="headerlink" title="44. 页面 社会化 分享功能"></a>44. 页面 社会化 分享功能</h4><p>页面 社会化 分享功能地址</p>
+<p>百度分享<br><a href="https://link.jianshu.com?t=http://share.baidu.com" target="_blank" rel="noopener">http://share.baidu.com</a> pc端</p>
+<p>JiaThis<br><a href="https://link.jianshu.com?t=http://jiathis.com" target="_blank" rel="noopener">http://jiathis.com</a> pc端</p>
+<p>社会化分享组件<br><a href="https://link.jianshu.com?t=http://developer.baidu.com/soc/share" target="_blank" rel="noopener">http://developer.baidu.com/soc/share</a> 移动端</p>
+<p>ShareSDK 轻松实现社会化功能<br><a href="https://link.jianshu.com?t=http://www.mob.com/#/index" target="_blank" rel="noopener">http://www.mob.com/#/index</a> 移动端</p>
+<p>友盟分享<br><a href="https://link.jianshu.com?t=http://dev.umeng.com/social/android/quick-integration" target="_blank" rel="noopener">http://dev.umeng.com/social/android/quick-integration</a> 移动端</p>
+<h4 id="45-富文本编辑器"><a href="#45-富文本编辑器" class="headerlink" title="45. 富文本编辑器"></a>45. 富文本编辑器</h4><p>富文本编辑器地址</p>
+<p>功能齐全 tinymce<br><a href="https://link.jianshu.com?t=https://www.tinymce.com" target="_blank" rel="noopener">https://www.tinymce.com</a></p>
+<p>百度 ueditor<br><a href="https://link.jianshu.com?t=http://ueditor.baidu.com/website" target="_blank" rel="noopener">http://ueditor.baidu.com/website</a></p>
+<p>经典的ckeditor<br><a href="https://link.jianshu.com?t=http://ckeditor.com" target="_blank" rel="noopener">http://ckeditor.com</a></p>
+<p>经典的kindeditor<br><a href="https://link.jianshu.com?t=http://kindeditor.net" target="_blank" rel="noopener">http://kindeditor.net</a></p>
+<p>wysiwyg<br><a href="https://link.jianshu.com?t=http://www.bootcss.com/p/bootstrap-wysiwyg" target="_blank" rel="noopener">http://www.bootcss.com/p/bootstrap-wysiwyg</a></p>
+<p>一个有情怀的编辑器。Bach’s Editor<br><a href="https://link.jianshu.com?t=http://integ.github.io/BachEditor" target="_blank" rel="noopener">http://integ.github.io/BachEditor</a></p>
+<p>tower用的编辑器<br><a href="https://link.jianshu.com?t=https://github.com/mycolorway/simditor" target="_blank" rel="noopener">https://github.com/mycolorway/simditor</a></p>
+<p>summernote 编辑器<br><a href="https://link.jianshu.com?t=https://github.com/summernote/summernote" target="_blank" rel="noopener">https://github.com/summernote/summernote</a></p>
+<p>html5编辑器<br><a href="https://link.jianshu.com?t=http://neilj.github.io/Squire" target="_blank" rel="noopener">http://neilj.github.io/Squire</a></p>
+<p>XEditor<br><a href="https://link.jianshu.com?t=http://lab.hustlzp.com/XEditor" target="_blank" rel="noopener">http://lab.hustlzp.com/XEditor</a></p>
+<p>wangEditor<br><a href="https://link.jianshu.com?t=https://github.com/wangfupeng1988/wangEditor" target="_blank" rel="noopener">https://github.com/wangfupeng1988/wangEditor</a></p>
+<h4 id="46-日历"><a href="#46-日历" class="headerlink" title="46. 日历"></a>46. 日历</h4><p><strong>46.1 PC</strong></p>
+<p>PC地址</p>
+<p>经典my97<br><a href="https://link.jianshu.com?t=http://www.my97.net/dp/demo/index.htm" target="_blank" rel="noopener">http://www.my97.net/dp/demo/index.htm</a></p>
+<p>强大的独立日期选择器<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/gbin1/archive/2012/04/16/2452105.html" target="_blank" rel="noopener">http://www.cnblogs.com/gbin1/archive/2012/04/16/2452105.html</a></p>
+<p>fullcalendar<br><a href="https://link.jianshu.com?t=http://fullcalendar.io" target="_blank" rel="noopener">http://fullcalendar.io</a></p>
+<p>fullcalendar日历控件知识点集合<br><a href="https://link.jianshu.com?t=http://blog.csdn.net/francislaw/article/details/7740630" target="_blank" rel="noopener">http://blog.csdn.net/francislaw/article/details/7740630</a></p>
+<p>中文api<br><a href="https://link.jianshu.com?t=http://blog.sina.com.cn/s/blog_9475b1c101012c5f.html" target="_blank" rel="noopener">http://blog.sina.com.cn/s/blog_9475b1c101012c5f.html</a></p>
+<p>农历日历<br><a href="https://link.jianshu.com?t=https://github.com/zzyss86/LunarCalendar" target="_blank" rel="noopener">https://github.com/zzyss86/LunarCalendar</a></p>
+<p>超酷的仿百度带节日日历老黄历控件<br><a href="https://link.jianshu.com?t=http://www.sucaisj.com/jiaoben/date/201509/16856.html" target="_blank" rel="noopener">http://www.sucaisj.com/jiaoben/date/201509/16856.html</a></p>
+<p>日期格式化<br><a href="https://link.jianshu.com?t=http://momentjs.com" target="_blank" rel="noopener">http://momentjs.com</a></p>
+<p>大牛日历控件<br><a href="https://link.jianshu.com?t=https://github.com/Johnqing/QPAYCalendar" target="_blank" rel="noopener">https://github.com/Johnqing/QPAYCalendar</a></p>
+<p>我群某管理作品<br><a href="https://link.jianshu.com?t=https://github.com/Iamlars/dateMarker" target="_blank" rel="noopener">https://github.com/Iamlars/dateMarker</a></p>
+<p>input按位替换-官网<br><a href="https://link.jianshu.com?t=http://digitalbush.com/projects/masked-input-plugin" target="_blank" rel="noopener">http://digitalbush.com/projects/masked-input-plugin</a></p>
+<p>input按位替换-github<br><a href="https://link.jianshu.com?t=https://github.com/digitalBush/jquery.maskedinput/tree/1.2.2" target="_blank" rel="noopener">https://github.com/digitalBush/jquery.maskedinput/tree/1.2.2</a></p>
+<p>bootstrap-daterangepicker<br><a href="https://link.jianshu.com?t=https://github.com/dangrossman/bootstrap-daterangepicker" target="_blank" rel="noopener">https://github.com/dangrossman/bootstrap-daterangepicker</a></p>
+<p>国外30个插件集合<br><a href="https://link.jianshu.com?t=http://www.vandelaydesign.com/30-best-free-jquery-plugins" target="_blank" rel="noopener">http://www.vandelaydesign.com/30-best-free-jquery-plugins</a></p>
+<p>JavaScript datepicker<br><a href="https://link.jianshu.com?t=http://dbushell.com/2012/10/09/pikaday-javascript-datepicker" target="_blank" rel="noopener">http://dbushell.com/2012/10/09/pikaday-javascript-datepicker</a></p>
+<p>Datepair.js<br><a href="https://link.jianshu.com?t=http://jonthornton.github.io/Datepair.js" target="_blank" rel="noopener">http://jonthornton.github.io/Datepair.js</a></p>
+<p>一个风格多样的日历<br><a href="https://link.jianshu.com?t=https://github.com/glad/glDatePicker" target="_blank" rel="noopener">https://github.com/glad/glDatePicker</a></p>
+<p>弹出层式的全日历<br><a href="https://link.jianshu.com?t=http://amsul.ca/pickadate.js/date" target="_blank" rel="noopener">http://amsul.ca/pickadate.js/date</a></p>
+<p>jquery双日历<br><a href="https://link.jianshu.com?t=http://www.daterangepicker.com" target="_blank" rel="noopener">http://www.daterangepicker.com</a></p>
+<p><strong>46.2 移动</strong></p>
+<p>移动地址</p>
+<p>大气实用jQuery手机移动端日历日期选择插件<br><a href="https://link.jianshu.com?t=http://www.frankdemo.cn/index.php?c=content&amp;a=show&amp;id=115" target="_blank" rel="noopener">http://www.frankdemo.cn/index.php?c=content&amp;a=show&amp;id=115</a></p>
+<p>jQuery Mobile 移动开发中的日期插件Mobiscroll<br><a href="https://link.jianshu.com?t=https://mobiscroll.com" target="_blank" rel="noopener">https://mobiscroll.com</a></p>
+<p><strong>46.3 Date library</strong></p>
+<p>Date library地址</p>
+<p>Datejs<br><a href="https://link.jianshu.com?t=https://github.com/datejs/Datejs" target="_blank" rel="noopener">https://github.com/datejs/Datejs</a></p>
+<p>sugarjs<br><a href="https://link.jianshu.com?t=http://sugarjs.com/api/Date" target="_blank" rel="noopener">http://sugarjs.com/api/Date</a></p>
+<h4 id="47-综合效果搜索平台"><a href="#47-综合效果搜索平台" class="headerlink" title="47. 综合效果搜索平台"></a>47. 综合效果搜索平台</h4><p>综合效果搜索平台地址</p>
+<p>效果网<br><a href="https://link.jianshu.com?t=http://www.jq22.com" target="_blank" rel="noopener">http://www.jq22.com</a></p>
+<p>17素材<br><a href="https://link.jianshu.com?t=http://www.17sucai.com" target="_blank" rel="noopener">http://www.17sucai.com</a></p>
+<p>常用的JavaScript代码片段<br><a href="https://link.jianshu.com?t=http://microjs.com" target="_blank" rel="noopener">http://microjs.com</a></p>
+<h4 id="48-前端工程化"><a href="#48-前端工程化" class="headerlink" title="48. 前端工程化"></a>48. 前端工程化</h4><p><strong>48.1 概述</strong></p>
+<p>概述地址</p>
+<p>前端工具大全<br><a href="https://link.jianshu.com?t=http://www.awesomes.cn" target="_blank" rel="noopener">http://www.awesomes.cn</a></p>
+<p>什么是前端工程化<br><a href="https://link.jianshu.com?t=https://github.com/fouber/blog/issues/10?from=timeline&amp;isappinstalled=0#" target="_blank" rel="noopener">https://github.com/fouber/blog/issues/10?from=timeline&amp;isappinstalled=0#</a></p>
+<h4 id="48-2-Gulp"><a href="#48-2-Gulp" class="headerlink" title="48.2 Gulp"></a>48.2 Gulp</h4><p>Gulp地址</p>
+<p>Gulp官网<br><a href="https://link.jianshu.com?t=http://gulpjs.com" target="_blank" rel="noopener">http://gulpjs.com</a></p>
+<p>Gulp中文网<br><a href="https://link.jianshu.com?t=http://www.gulpjs.com.cn" target="_blank" rel="noopener">http://www.gulpjs.com.cn</a></p>
+<p>gulp资料收集<br><a href="https://link.jianshu.com?t=https://github.com/Platform-CUF/use-gulp" target="_blank" rel="noopener">https://github.com/Platform-CUF/use-gulp</a></p>
+<p>Gulp：任务自动管理工具 - ruanyifeng<br><a href="https://link.jianshu.com?t=http://javascript.ruanyifeng.com/tool/gulp.html" target="_blank" rel="noopener">http://javascript.ruanyifeng.com/tool/gulp.html</a></p>
+<p>Gulp插件<br><a href="https://link.jianshu.com?t=http://gulpjs.com/plugins" target="_blank" rel="noopener">http://gulpjs.com/plugins</a></p>
+<p>Gulp不完全入门教程<br><a href="https://link.jianshu.com?t=http://www.ido321.com/1622.html" target="_blank" rel="noopener">http://www.ido321.com/1622.html</a></p>
+<p>为什么使用gulp?<br><a href="https://link.jianshu.com?t=https://github.com/hjzheng/CUF_meeting_knowledge_share/issues/33" target="_blank" rel="noopener">https://github.com/hjzheng/CUF_meeting_knowledge_share/issues/33</a></p>
+<p>Gulp安装及配合组件构建前端开发一体化<br><a href="https://link.jianshu.com?t=http://www.dbpoo.com/getting-started-with-gulp" target="_blank" rel="noopener">http://www.dbpoo.com/getting-started-with-gulp</a></p>
+<p>Gulp 入门指南<br><a href="https://link.jianshu.com?t=https://github.com/nimojs/gulp-book" target="_blank" rel="noopener">https://github.com/nimojs/gulp-book</a></p>
+<p>Gulp 入门指南 - nimojs<br><a href="https://link.jianshu.com?t=https://github.com/nimojs/blog/issues/19" target="_blank" rel="noopener">https://github.com/nimojs/blog/issues/19</a></p>
+<p>Gulp入门教程<br><a href="https://link.jianshu.com?t=http://markpop.github.io/2014/09/17/Gulp%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B" target="_blank" rel="noopener">http://markpop.github.io/2014/09/17/Gulp%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B</a></p>
+<p>Gulp in Action<br><a href="https://link.jianshu.com?t=http://www.imooc.com/video/5692" target="_blank" rel="noopener">http://www.imooc.com/video/5692</a></p>
+<p>Gulp开发教程（翻译）<br><a href="https://link.jianshu.com?t=http://www.w3ctech.com/topic/134" target="_blank" rel="noopener">http://www.w3ctech.com/topic/134</a></p>
+<p>前端构建工具gulpjs的使用介绍及技巧<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/2050/p/4198792.html" target="_blank" rel="noopener">http://www.cnblogs.com/2050/p/4198792.html</a></p>
+<h4 id="48-3-Grunt"><a href="#48-3-Grunt" class="headerlink" title="48.3 Grunt"></a>48.3 Grunt</h4><p>Grunt地址</p>
+<p>gruntjs<br><a href="https://link.jianshu.com?t=http://gruntjs.com" target="_blank" rel="noopener">http://gruntjs.com</a></p>
+<p>Grunt中文网<br><a href="https://link.jianshu.com?t=http://www.gruntjs.net" target="_blank" rel="noopener">http://www.gruntjs.net</a></p>
+<h4 id="48-4-Fis"><a href="#48-4-Fis" class="headerlink" title="48.4 Fis"></a>48.4 Fis</h4><p>Fis地址</p>
+<p>fis 官网<br><a href="https://link.jianshu.com?t=http://fex-team.github.io/fis-site/index.html" target="_blank" rel="noopener">http://fex-team.github.io/fis-site/index.html</a></p>
+<p>fis<br><a href="https://link.jianshu.com?t=http://fis.baidu.com" target="_blank" rel="noopener">http://fis.baidu.com</a></p>
+<h4 id="49-轮播图"><a href="#49-轮播图" class="headerlink" title="49. 轮播图"></a>49. 轮播图</h4><p><strong>49.1 pc图轮</strong></p>
+<p>pc图轮地址</p>
+<p>单屏轮播sochange<br><a href="https://link.jianshu.com?t=http://www.jsfoot.com/jquery/demo/2011-09-20/192.html" target="_blank" rel="noopener">http://www.jsfoot.com/jquery/demo/2011-09-20/192.html</a></p>
+<p>左右按钮多图切换<br><a href="https://link.jianshu.com?t=http://bxslider.com/examples/carousel-demystified" target="_blank" rel="noopener">http://bxslider.com/examples/carousel-demystified</a></p>
+<p>fullpage全屏轮播<br><a href="https://link.jianshu.com?t=https://github.com/alvarotrigo/fullPage.js" target="_blank" rel="noopener">https://github.com/alvarotrigo/fullPage.js</a></p>
+<p><strong>49.2 移动端</strong></p>
+<p>移动端地址</p>
+<p>无缝切换<br><a href="https://link.jianshu.com?t=http://www.swipejs.com" target="_blank" rel="noopener">http://www.swipejs.com</a></p>
+<p>滑屏效果<br><a href="https://link.jianshu.com?t=http://www.idangero.us/swiper" target="_blank" rel="noopener">http://www.idangero.us/swiper</a></p>
+<p>全屏fullpage<br><a href="https://link.jianshu.com?t=https://github.com/peunzhang/fullpage" target="_blank" rel="noopener">https://github.com/peunzhang/fullpage</a></p>
+<p>单个图片切换<br><a href="https://link.jianshu.com?t=https://github.com/qiqiboy/touchslider" target="_blank" rel="noopener">https://github.com/qiqiboy/touchslider</a></p>
+<p>单个全屏切换<br><a href="https://link.jianshu.com?t=https://github.com/peunzhang/slip.js" target="_blank" rel="noopener">https://github.com/peunzhang/slip.js</a></p>
+<p>百度的切换库<br><a href="https://link.jianshu.com?t=http://touch.code.baidu.com/examples.html?qq-pf-to=pcqq.group" target="_blank" rel="noopener">http://touch.code.baidu.com/examples.html?qq-pf-to=pcqq.group</a></p>
+<p>单个全屏切换<br><a href="https://link.jianshu.com?t=https://github.com/peunzhang/iSlider" target="_blank" rel="noopener">https://github.com/peunzhang/iSlider</a></p>
+<p>滑屏效果<br><a href="https://link.jianshu.com?t=https://github.com/saw/touch-interfaces" target="_blank" rel="noopener">https://github.com/saw/touch-interfaces</a></p>
+<p>旋转拖动设置<br><a href="https://link.jianshu.com?t=http://baijs.com/tinycircleslider" target="_blank" rel="noopener">http://baijs.com/tinycircleslider</a></p>
+<p>类似于swipe切换<br><a href="https://link.jianshu.com?t=http://touchslider.com" target="_blank" rel="noopener">http://touchslider.com</a></p>
+<p>支持多种形式的触摸滑动<br><a href="https://link.jianshu.com?t=http://www.swiper.com.cn/demo/index.html" target="_blank" rel="noopener">http://www.swiper.com.cn/demo/index.html</a></p>
+<p>滑屏效果<br><a href="https://link.jianshu.com?t=https://github.com/joker-ye/main/blob/master/wap/index.html" target="_blank" rel="noopener">https://github.com/joker-ye/main/blob/master/wap/index.html</a></p>
+<p>大话主席pc移动图片轮换<br><a href="https://link.jianshu.com?t=http://www.superslide2.com" target="_blank" rel="noopener">http://www.superslide2.com</a></p>
+<p>滑屏效果<br><a href="https://link.jianshu.com?t=https://github.com/hahnzhu/parallax.js" target="_blank" rel="noopener">https://github.com/hahnzhu/parallax.js</a></p>
+<p>基于zepto的fullpage<br><a href="https://link.jianshu.com?t=https://github.com/yanhaijing/zepto.fullpage" target="_blank" rel="noopener">https://github.com/yanhaijing/zepto.fullpage</a></p>
+<p>[WebApp]定宽网页设计下，固定宽度布局开发WebApp并实现多终端下WebApp布局自适应<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/plums/archive/2013/01/10/WebApp-fixed-width-layout-of-multi-terminal-adapter-since.html" target="_blank" rel="noopener">http://www.cnblogs.com/plums/archive/2013/01/10/WebApp-fixed-width-layout-of-multi-terminal-adapter-since.html</a></p>
+<p>判断微信客户端的那些坑<br><a href="https://link.jianshu.com?t=http://loo2k.com/blog/detecting-wechat-client" target="_blank" rel="noopener">http://loo2k.com/blog/detecting-wechat-client</a></p>
+<p>可以通过javascript直接调用原生分享的工具<br><a href="https://link.jianshu.com?t=https://github.com/JefferyWang/nativeShare.js" target="_blank" rel="noopener">https://github.com/JefferyWang/nativeShare.js</a></p>
+<p>JiaThis 分享到微信代码<br><a href="https://link.jianshu.com?t=http://www.jiathis.com/help/html/weixin-share-code" target="_blank" rel="noopener">http://www.jiathis.com/help/html/weixin-share-code</a></p>
+<p>聊聊移动端跨平台开发的各种技术<br><a href="https://link.jianshu.com?t=http://fex.baidu.com/blog/2015/05/cross-mobile" target="_blank" rel="noopener">http://fex.baidu.com/blog/2015/05/cross-mobile</a></p>
+<p>前端自动化测试<br><a href="https://link.jianshu.com?t=http://www.zhihu.com/question/29922082" target="_blank" rel="noopener">http://www.zhihu.com/question/29922082</a></p>
+<p>多种轮换图片<br><a href="https://link.jianshu.com?t=http://ajccom.github.io/niceslider" target="_blank" rel="noopener">http://ajccom.github.io/niceslider</a></p>
+<p>滑动侧边栏<br><a href="https://link.jianshu.com?t=https://mango.github.io/slideout" target="_blank" rel="noopener">https://mango.github.io/slideout</a></p>
+<h4 id="50-文件上传"><a href="#50-文件上传" class="headerlink" title="50. 文件上传"></a>50. 文件上传</h4><p>文件上传地址</p>
+<p>百度上传组件<br><a href="https://link.jianshu.com?t=http://fex.baidu.com/webuploader" target="_blank" rel="noopener">http://fex.baidu.com/webuploader</a></p>
+<p>上传<br><a href="https://link.jianshu.com?t=https://blueimp.github.io/jQuery-File-Upload" target="_blank" rel="noopener">https://blueimp.github.io/jQuery-File-Upload</a></p>
+<p>flash 头像上传<br><a href="https://link.jianshu.com?t=http://www.hdfu.net" target="_blank" rel="noopener">http://www.hdfu.net</a></p>
+<p>图片上传预览<br><a href="https://link.jianshu.com?t=http://www.dropzonejs.com" target="_blank" rel="noopener">http://www.dropzonejs.com</a></p>
+<p>图片裁剪<br><a href="https://link.jianshu.com?t=http://elemefe.github.io/image-cropper" target="_blank" rel="noopener">http://elemefe.github.io/image-cropper</a></p>
+<p>图片裁剪-shearphoto<br><a href="https://link.jianshu.com?t=http://www.shearphoto.com" target="_blank" rel="noopener">http://www.shearphoto.com</a></p>
+<p>jQuery图片处理<br><a href="https://link.jianshu.com?t=http://www.oschina.net/project/tag/284/jquery-image-tools?lang=0&amp;os=0&amp;sort=view&amp;p=2" target="_blank" rel="noopener">http://www.oschina.net/project/tag/284/jquery-image-tools?lang=0&amp;os=0&amp;sort=view&amp;p=2</a></p>
+<h4 id="51-模拟select"><a href="#51-模拟select" class="headerlink" title="51. 模拟select"></a>51. 模拟select</h4><p>模拟select地址</p>
+<p>糖饼 select<br><a href="https://link.jianshu.com?t=http://aui.github.io/popupjs/doc/selectbox.html" target="_blank" rel="noopener">http://aui.github.io/popupjs/doc/selectbox.html</a></p>
+<p>flexselect<br><a href="https://link.jianshu.com?t=https://github.com/rmm5t/jquery-flexselect" target="_blank" rel="noopener">https://github.com/rmm5t/jquery-flexselect</a></p>
+<p>双select<br><a href="https://link.jianshu.com?t=http://loudev.com" target="_blank" rel="noopener">http://loudev.com</a></p>
+<p>select2<br><a href="https://link.jianshu.com?t=http://select2.github.io" target="_blank" rel="noopener">http://select2.github.io</a></p>
+<h4 id="52-取色插件"><a href="#52-取色插件" class="headerlink" title="52. 取色插件"></a>52. 取色插件</h4><p>取色插件地址</p>
+<p>类似 Photoshop 的界面取色插件<br><a href="https://link.jianshu.com?t=http://www.jq22.com/plugin/367" target="_blank" rel="noopener">http://www.jq22.com/plugin/367</a></p>
+<p>jquery color<br><a href="https://link.jianshu.com?t=https://github.com/jquery/jquery-color" target="_blank" rel="noopener">https://github.com/jquery/jquery-color</a></p>
+<p>取色插件集合<br><a href="https://link.jianshu.com?t=http://www.oschina.net/project/tag/287/color-picker" target="_blank" rel="noopener">http://www.oschina.net/project/tag/287/color-picker</a></p>
+<p>farbtastic 圆环＋正方形<br><a href="https://link.jianshu.com?t=https://github.com/mattfarina/farbtastic" target="_blank" rel="noopener">https://github.com/mattfarina/farbtastic</a></p>
+<h4 id="53-城市联动"><a href="#53-城市联动" class="headerlink" title="53. 城市联动"></a>53. 城市联动</h4><p>城市联动地址</p>
+<p>jquery.cityselect.js基于jQuery+JSON的省市或自定义联动效果<br><a href="https://link.jianshu.com?t=http://www.ijquery.cn/?p=360" target="_blank" rel="noopener">http://www.ijquery.cn/?p=360</a></p>
+<h4 id="54-剪贴板"><a href="#54-剪贴板" class="headerlink" title="54. 剪贴板"></a>54. 剪贴板</h4><p>剪贴板地址</p>
+<p>剪贴板<br><a href="https://link.jianshu.com?t=https://github.com/zeroclipboard/zeroclipboard" target="_blank" rel="noopener">https://github.com/zeroclipboard/zeroclipboard</a></p>
+<p>clipboard 最新的剪切方案<br><a href="https://link.jianshu.com?t=http://zenorocha.github.io/clipboard.js" target="_blank" rel="noopener">http://zenorocha.github.io/clipboard.js</a></p>
+<p>不是Flash的剪贴板<br><a href="https://link.jianshu.com?t=https://github.com/zenorocha/clipboard.js" target="_blank" rel="noopener">https://github.com/zenorocha/clipboard.js</a></p>
+<h4 id="55-简繁转换"><a href="#55-简繁转换" class="headerlink" title="55. 简繁转换"></a>55. 简繁转换</h4><p>简繁转换地址</p>
+<p>简繁转换<br><a href="https://link.jianshu.com?t=https://github.com/BYVoid/OpenCC" target="_blank" rel="noopener">https://github.com/BYVoid/OpenCC</a></p>
+<h4 id="56-表格-Grid"><a href="#56-表格-Grid" class="headerlink" title="56. 表格 Grid"></a>56. 表格 Grid</h4><p>表格 Grid地址</p>
+<p>facebook表格<br><a href="https://link.jianshu.com?t=http://facebook.github.io/fixed-data-table" target="_blank" rel="noopener">http://facebook.github.io/fixed-data-table</a></p>
+<p>类似于Excel编辑表格-handsontable<br><a href="https://link.jianshu.com?t=http://handsontable.com" target="_blank" rel="noopener">http://handsontable.com</a></p>
+<p>bootstrap-table插件<br><a href="https://link.jianshu.com?t=http://bootstrap-table.wenzhixin.net.cn" target="_blank" rel="noopener">http://bootstrap-table.wenzhixin.net.cn</a></p>
+<p>datatables<br><a href="https://link.jianshu.com?t=https://www.datatables.net" target="_blank" rel="noopener">https://www.datatables.net</a></p>
+<h4 id="57-在线演示"><a href="#57-在线演示" class="headerlink" title="57. 在线演示"></a>57. 在线演示</h4><p>在线演示地址</p>
+<p>js 在线编辑 - runjs<br><a href="https://link.jianshu.com?t=http://runjs.cn" target="_blank" rel="noopener">http://runjs.cn</a></p>
+<p>js 在线编辑 - jsbin<br><a href="https://link.jianshu.com?t=http://jsbin.com" target="_blank" rel="noopener">http://jsbin.com</a></p>
+<p>js 在线编辑 - codepen<br><a href="https://link.jianshu.com?t=http://codepen.io" target="_blank" rel="noopener">http://codepen.io</a></p>
+<p>js 在线编辑 - jsfiddle<br><a href="https://link.jianshu.com?t=http://jsfiddle.net" target="_blank" rel="noopener">http://jsfiddle.net</a></p>
+<p>java 在线编辑 - runjs<br><a href="https://link.jianshu.com?t=http://ideone.com" target="_blank" rel="noopener">http://ideone.com</a></p>
+<p>js 在线编辑 - hcharts<br><a href="https://link.jianshu.com?t=http://code.hcharts.cn" target="_blank" rel="noopener">http://code.hcharts.cn</a></p>
+<p>js 在线编辑 - jsdm<br><a href="https://link.jianshu.com?t=http://jsdm.com" target="_blank" rel="noopener">http://jsdm.com</a></p>
+<p>sql 在线编辑 - sqlfiddle<br><a href="https://link.jianshu.com?t=http://sqlfiddle.com" target="_blank" rel="noopener">http://sqlfiddle.com</a></p>
+<p>mozilla 在线编辑器<br><a href="https://link.jianshu.com?t=https://thimble.mozilla.org" target="_blank" rel="noopener">https://thimble.mozilla.org</a></p>
+<h4 id="58-播放器"><a href="#58-播放器" class="headerlink" title="58. 播放器"></a>58. 播放器</h4><p>播放器地址</p>
+<p>Html5 VideoPlayer<br><a href="https://link.jianshu.com?t=https://github.com/zmmbreeze/DeadSimpleVideoPlayer" target="_blank" rel="noopener">https://github.com/zmmbreeze/DeadSimpleVideoPlayer</a></p>
+<h4 id="59-粒子动画"><a href="#59-粒子动画" class="headerlink" title="59. 粒子动画"></a>59. 粒子动画</h4><p>粒子动画地址</p>
+<p>Proton 烟花<br><a href="https://link.jianshu.com?t=http://a-jie.github.io/Proton/#example" target="_blank" rel="noopener">http://a-jie.github.io/Proton/#example</a></p>
+<h4 id="60-Nodejs"><a href="#60-Nodejs" class="headerlink" title="60. Nodejs"></a>60. Nodejs</h4><p>Nodejs地址</p>
+<p>nodejs 篇幅比较巨大<br><a href="https://link.jianshu.com?t=http://liuqing.pw" target="_blank" rel="noopener">http://liuqing.pw</a></p>
+<p>Node.js 包教不包会<br><a href="https://link.jianshu.com?t=https://github.com/alsotang/node-lessons" target="_blank" rel="noopener">https://github.com/alsotang/node-lessons</a></p>
+<p>篇幅比较少<br><a href="https://link.jianshu.com?t=http://www.rainweb.cn/article/category/Nodejs" target="_blank" rel="noopener">http://www.rainweb.cn/article/category/Nodejs</a></p>
+<p>node express 入门教程<br><a href="https://link.jianshu.com?t=http://www.w3cfuns.com/article-5598538-1-1.html" target="_blank" rel="noopener">http://www.w3cfuns.com/article-5598538-1-1.html</a></p>
+<p>nodejs定时任务<br><a href="https://link.jianshu.com?t=http://my.oschina.net/u/568264/blog/193773" target="_blank" rel="noopener">http://my.oschina.net/u/568264/blog/193773</a></p>
+<p>一个nodejs博客<br><a href="https://link.jianshu.com?t=http://60sky.com" target="_blank" rel="noopener">http://60sky.com</a></p>
+<p>【NodeJS 学习笔记04】新闻发布系统<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/yexiaochai/p/3536547.html" target="_blank" rel="noopener">http://www.cnblogs.com/yexiaochai/p/3536547.html</a></p>
+<p>过年7天乐，学nodejs 也快乐<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/qqloving/p/3541099.html" target="_blank" rel="noopener">http://www.cnblogs.com/qqloving/p/3541099.html</a></p>
+<p>七天学会NodeJS<br><a href="https://link.jianshu.com?t=https://github.com/nqdeng/7-days-nodejs" target="_blank" rel="noopener">https://github.com/nqdeng/7-days-nodejs</a></p>
+<p>Nodejs学习笔记（二）— 事件模块<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/zhongweiv/p/nodejs_events.html" target="_blank" rel="noopener">http://www.cnblogs.com/zhongweiv/p/nodejs_events.html</a></p>
+<p>nodejs入门<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/liusuqi/p/3735491.html" target="_blank" rel="noopener">http://www.cnblogs.com/liusuqi/p/3735491.html</a></p>
+<p>angularjs nodejs<br><a href="https://link.jianshu.com?t=https://github.com/zensh/jsgen" target="_blank" rel="noopener">https://github.com/zensh/jsgen</a></p>
+<p>从零开始nodejs系列文章<br><a href="https://link.jianshu.com?t=http://blog.fens.me/series-nodejs" target="_blank" rel="noopener">http://blog.fens.me/series-nodejs</a></p>
+<p>理解nodejs<br><a href="https://link.jianshu.com?t=http://debuggable.com/posts/understanding-node-js:4bd98440-45e4-4a9a-8ef7-0f7ecbdd56cb" target="_blank" rel="noopener">http://debuggable.com/posts/understanding-node-js:4bd98440-45e4-4a9a-8ef7-0f7ecbdd56cb</a></p>
+<p>nodejs事件轮询<br><a href="https://link.jianshu.com?t=http://blog.mixu.net/2011/02/01/understanding-the-node-js-event-loop" target="_blank" rel="noopener">http://blog.mixu.net/2011/02/01/understanding-the-node-js-event-loop</a></p>
+<p>node入门<br><a href="https://link.jianshu.com?t=http://www.nodebeginner.org/index-zh-cn.html" target="_blank" rel="noopener">http://www.nodebeginner.org/index-zh-cn.html</a></p>
+<p>nodejs cms<br><a href="https://link.jianshu.com?t=http://ourjs.com/detail/53e1f281c5910a9806000001" target="_blank" rel="noopener">http://ourjs.com/detail/53e1f281c5910a9806000001</a></p>
+<p>Node初学者入门，一本全面的NodeJS教程<br><a href="https://link.jianshu.com?t=http://ourjs.com/detail/529ca5950cb6498814000005" target="_blank" rel="noopener">http://ourjs.com/detail/529ca5950cb6498814000005</a></p>
+<p>NodeJS的代码调试和性能调优<br><a href="https://link.jianshu.com?t=http://www.barretlee.com/blog/2015/10/07/debug-nodejs-in-command-line" target="_blank" rel="noopener">http://www.barretlee.com/blog/2015/10/07/debug-nodejs-in-command-line</a></p>
+<h4 id="61-性能优化"><a href="#61-性能优化" class="headerlink" title="61. 性能优化"></a>61. 性能优化</h4><p><strong>61.1 常规优化</strong></p>
+<p>常规优化地址</p>
+<p>Javascript高性能动画与页面渲染<br><a href="https://link.jianshu.com?t=http://www.infoq.com/cn/articles/javascript-high-performance-animation-and-page-rendering" target="_blank" rel="noopener">http://www.infoq.com/cn/articles/javascript-high-performance-animation-and-page-rendering</a></p>
+<p>移动H5前端性能优化指南<br><a href="https://link.jianshu.com?t=http://isux.tencent.com/h5-performance.html" target="_blank" rel="noopener">http://isux.tencent.com/h5-performance.html</a></p>
+<p>5173首页前端性能优化实践<br><a href="https://link.jianshu.com?t=http://ued.5173.com/?p=1731" target="_blank" rel="noopener">http://ued.5173.com/?p=1731</a></p>
+<p>给网页设计师和前端开发者看的前端性能优化<br><a href="https://link.jianshu.com?t=http://www.uisdc.com/front-end-performance-for-web-designers-and-front-end-developers" target="_blank" rel="noopener">http://www.uisdc.com/front-end-performance-for-web-designers-and-front-end-developers</a></p>
+<p>复杂应用的 CSS 性能分析和优化建议<br><a href="https://link.jianshu.com?t=http://www.orzpoint.com/profiling-css-and-optimization-notes" target="_blank" rel="noopener">http://www.orzpoint.com/profiling-css-and-optimization-notes</a></p>
+<p>张鑫旭——前端性能<br><a href="https://link.jianshu.com?t=http://www.zhangxinxu.com/wordpress/tag/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD" target="_blank" rel="noopener">http://www.zhangxinxu.com/wordpress/tag/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD</a></p>
+<p>前端性能监控总结<br><a href="https://link.jianshu.com?t=http://www.xiaoqiang.org/javascript/font-end-performance-monitor.html" target="_blank" rel="noopener">http://www.xiaoqiang.org/javascript/font-end-performance-monitor.html</a></p>
+<p>网站性能优化之CSS无图片技术<br><a href="https://link.jianshu.com?t=http://udc.weibo.com/2013/05/%E7%BD%91%E7%AB%99%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8Bcss%E6%97%A0%E5%9B%BE%E7%89%87%E6%8A%80%E6%9C%AF" target="_blank" rel="noopener">http://udc.weibo.com/2013/05/%E7%BD%91%E7%AB%99%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8Bcss%E6%97%A0%E5%9B%BE%E7%89%87%E6%8A%80%E6%9C%AF</a></p>
+<p>web前端性能优化进阶路<br><a href="https://link.jianshu.com?t=http://www.aliued.cn/2013/01/20/web%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E8%BF%9B%E9%98%B6%E8%B7%AF.html" target="_blank" rel="noopener">http://www.aliued.cn/2013/01/20/web%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E8%BF%9B%E9%98%B6%E8%B7%AF.html</a></p>
+<p>前端技术：网站性能优化之CSS无图片技术<br><a href="https://link.jianshu.com?t=http://my.eoe.cn/tuwandou/archive/4544.html" target="_blank" rel="noopener">http://my.eoe.cn/tuwandou/archive/4544.html</a></p>
+<p>浏览器的加载与页面性能优化<br><a href="https://link.jianshu.com?t=http://www.baiduux.com/blog/2011/02/15/browser-loading" target="_blank" rel="noopener">http://www.baiduux.com/blog/2011/02/15/browser-loading</a></p>
+<p>页面加载中的图片性能优化<br><a href="https://link.jianshu.com?t=http://www.w3ctech.com/p/1503" target="_blank" rel="noopener">http://www.w3ctech.com/p/1503</a></p>
+<p>Hey——前端性能<br><a href="https://link.jianshu.com?t=http://www.feelcss.com/tag/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD" target="_blank" rel="noopener">http://www.feelcss.com/tag/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD</a></p>
+<p>html优化<br><a href="https://link.jianshu.com?t=http://www.baiduux.com/blog/2010/03/15/html%E4%BC%98%E5%8C%96-2" target="_blank" rel="noopener">http://www.baiduux.com/blog/2010/03/15/html%E4%BC%98%E5%8C%96-2</a></p>
+<p>99css——性能<br><a href="https://link.jianshu.com?t=http://www.99css.com/tag/%e6%80%a7%e8%83%bd" target="_blank" rel="noopener">http://www.99css.com/tag/%e6%80%a7%e8%83%bd</a></p>
+<p>Yslow——性能优化<br><a href="https://link.jianshu.com?t=http://www.yslow.net/category.php?cid=20" target="_blank" rel="noopener">http://www.yslow.net/category.php?cid=20</a></p>
+<p>YSLOW中文介绍<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/yslow" target="_blank" rel="noopener">http://www.cnblogs.com/yslow</a></p>
+<p>转一篇Yahoo关于网站性能优化的文章，兼谈本站要做的优化<br><a href="https://link.jianshu.com?t=http://www.360ito.com/article/40.html" target="_blank" rel="noopener">http://www.360ito.com/article/40.html</a></p>
+<p>Yahoo!团队实践分享：网站性能<br><a href="https://link.jianshu.com?t=http://www.360doc.com/content/10/0928/09/2588264_56971287.shtml" target="_blank" rel="noopener">http://www.360doc.com/content/10/0928/09/2588264_56971287.shtml</a></p>
+<p>网站性能优化指南：什么使我们的网站变慢？<br><a href="https://link.jianshu.com?t=http://blog.jiasule.com/i/153" target="_blank" rel="noopener">http://blog.jiasule.com/i/153</a></p>
+<p>网站性能优化实践，减少加载时间，提高用户体验<br><a href="https://link.jianshu.com?t=http://www.powereasy.net/helpyou/knowledge/ecommerce/9593.html" target="_blank" rel="noopener">http://www.powereasy.net/helpyou/knowledge/ecommerce/9593.html</a></p>
+<p>浅谈网站性能优化 前端篇<br><a href="https://link.jianshu.com?t=http://www.umtry.com/archives/747.html" target="_blank" rel="noopener">http://www.umtry.com/archives/747.html</a></p>
+<p>前端重构实践之如何对网站性能优化？<br><a href="https://link.jianshu.com?t=http://www.adinnet.cn/blog/designview/2012-7-12/678.html" target="_blank" rel="noopener">http://www.adinnet.cn/blog/designview/2012-7-12/678.html</a></p>
+<p>前端性能优化：使用媒体查询加载指定大小的背景图片<br><a href="https://link.jianshu.com?t=http://www.gbin1.com/technology/javascript/20130708-front-end-performance-optimization-9" target="_blank" rel="noopener">http://www.gbin1.com/technology/javascript/20130708-front-end-performance-optimization-9</a></p>
+<p>网站性能系列博文<br><a href="https://link.jianshu.com?t=http://www.mykuer.com/post/factors-that-affect-the-speed-of-web-site-open.html" target="_blank" rel="noopener">http://www.mykuer.com/post/factors-that-affect-the-speed-of-web-site-open.html</a></p>
+<p>加载，不只是少一点点<br><a href="https://link.jianshu.com?t=http://tgideas.qq.com/webplat/info/news_version3/804/808/811/m579/201109/41355.shtml" target="_blank" rel="noopener">http://tgideas.qq.com/webplat/info/news_version3/804/808/811/m579/201109/41355.shtml</a></p>
+<p>前端性能的测试与优化<br><a href="https://link.jianshu.com?t=http://mzhou.me/article/95310" target="_blank" rel="noopener">http://mzhou.me/article/95310</a></p>
+<p>分享网页加载速度优化的一些技巧？<br><a href="https://link.jianshu.com?t=http://www.gbin1.com/technology/html/20130217-tips-for-speed-up-page-loading" target="_blank" rel="noopener">http://www.gbin1.com/technology/html/20130217-tips-for-speed-up-page-loading</a></p>
+<p>页面加载中的图片性能优化<br><a href="https://link.jianshu.com?t=http://www.f2es.com/images-bytes-opt" target="_blank" rel="noopener">http://www.f2es.com/images-bytes-opt</a></p>
+<p>web前端优化(基于Yslow<br><a href="https://link.jianshu.com?t=http://www.tcreator.info/webSchool/website/Front-end-Opt-Yslow.html" target="_blank" rel="noopener">http://www.tcreator.info/webSchool/website/Front-end-Opt-Yslow.html</a></p>
+<p>网站性能优化工具大全<br><a href="https://link.jianshu.com?t=https://www.qianduan.net/website-performance-optimization-tool.html" target="_blank" rel="noopener">https://www.qianduan.net/website-performance-optimization-tool.html</a></p>
+<p>【高性能前端1】高性能HTML<br><a href="https://link.jianshu.com?t=http://www.alloyteam.com/2012/10/high-performance-html" target="_blank" rel="noopener">http://www.alloyteam.com/2012/10/high-performance-html</a></p>
+<p>【高性能前端2】高性能CSS<br><a href="https://link.jianshu.com?t=http://www.alloyteam.com/2012/10/high-performance-css" target="_blank" rel="noopener">http://www.alloyteam.com/2012/10/high-performance-css</a></p>
+<p>由12306谈谈网站前端性能和后端性能优化<br><a href="https://link.jianshu.com?t=http://coolshell.cn/articles/6470.html" target="_blank" rel="noopener">http://coolshell.cn/articles/6470.html</a></p>
+<p>AlloyTeam——前端优化<br><a href="https://link.jianshu.com?t=http://www.alloyteam.com/webfrontend/%E5%89%8D%E7%AB%AF%E4%BC%98%E5%8C%96" target="_blank" rel="noopener">http://www.alloyteam.com/webfrontend/%E5%89%8D%E7%AB%AF%E4%BC%98%E5%8C%96</a></p>
+<p>毫秒必争，前端网页性能最佳实践<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/developersupport/p/3248695.html" target="_blank" rel="noopener">http://www.cnblogs.com/developersupport/p/3248695.html</a></p>
+<p>网站性能工具Yslow的使用方法<br><a href="https://link.jianshu.com?t=http://blog.sina.com.cn/s/blog_6e9d2e0701017kvu.html" target="_blank" rel="noopener">http://blog.sina.com.cn/s/blog_6e9d2e0701017kvu.html</a></p>
+<p>前端工程与性能优化（上）：静态资源版本更新与缓存<br><a href="https://link.jianshu.com?t=http://www.infoq.com/cn/articles/front-end-engineering-and-performance-optimization-part1" target="_blank" rel="noopener">http://www.infoq.com/cn/articles/front-end-engineering-and-performance-optimization-part1</a></p>
+<p>前端工程与性能优化（下）：静态资源管理与模板框架<br><a href="https://link.jianshu.com?t=http://www.infoq.com/cn/articles/front-end-engineering-and-performance-optimization-part2" target="_blank" rel="noopener">http://www.infoq.com/cn/articles/front-end-engineering-and-performance-optimization-part2</a></p>
+<p>HTTPS连接的前几毫秒发生了什么<br><a href="https://link.jianshu.com?t=http://blog.jobbole.com/48369" target="_blank" rel="noopener">http://blog.jobbole.com/48369</a></p>
+<p>Yslow<br><a href="https://link.jianshu.com?t=http://uicss.cn/yslow/#more-12319" target="_blank" rel="noopener">http://uicss.cn/yslow/#more-12319</a></p>
+<p>Essential Web Performance Metrics — A Primer, Part 1<br><a href="https://link.jianshu.com?t=http://blog.smartbear.com/web-performance/essential-web-performance-metrics-a-primer-part-1" target="_blank" rel="noopener">http://blog.smartbear.com/web-performance/essential-web-performance-metrics-a-primer-part-1</a></p>
+<p>Essential Web Performance Metrics — Part 2<br><a href="https://link.jianshu.com?t=http://blog.smartbear.com/performance/essential-web-performance-metrics-part-2" target="_blank" rel="noopener">http://blog.smartbear.com/performance/essential-web-performance-metrics-part-2</a></p>
+<p>YUISlide,针对移动设备的动画性能优化<br><a href="https://link.jianshu.com?t=http://jayli.github.io/blog/data/2011/12/23/yuislide.html" target="_blank" rel="noopener">http://jayli.github.io/blog/data/2011/12/23/yuislide.html</a></p>
+<p>Improving Site Performance<br><a href="https://link.jianshu.com?t=http://joelglovier.com/improving-site-performance" target="_blank" rel="noopener">http://joelglovier.com/improving-site-performance</a></p>
+<p>让网站提速的最佳前端实践<br><a href="https://link.jianshu.com?t=http://segmentfault.com/a/1190000000367899" target="_blank" rel="noopener">http://segmentfault.com/a/1190000000367899</a></p>
+<p>Why Website Speed is Important<br><a href="https://link.jianshu.com?t=http://sixrevisions.com/web-development/why-website-speed-is-important" target="_blank" rel="noopener">http://sixrevisions.com/web-development/why-website-speed-is-important</a></p>
+<p>Need for Speed – How to Improve your Website Performance<br><a href="https://link.jianshu.com?t=https://www.devbridge.com/articles/need-for-speed-how-to-improve-your-website-performance" target="_blank" rel="noopener">https://www.devbridge.com/articles/need-for-speed-how-to-improve-your-website-performance</a></p>
+<p>阿里无线前端性能优化指南 (Pt.1 加载期优化<br><a href="https://link.jianshu.com?t=https://github.com/amfe/article/issues/1" target="_blank" rel="noopener">https://github.com/amfe/article/issues/1</a></p>
+<p><strong>61.2 优化工具</strong></p>
+<p>优化工具地址</p>
+<p>JavaScript 性能分析新工具 OneProfile<br><a href="https://link.jianshu.com?t=http://www.html-js.com/article/3083" target="_blank" rel="noopener">http://www.html-js.com/article/3083</a></p>
+<p>JavaScript 堆内存分析新工具 OneHeap<br><a href="https://link.jianshu.com?t=http://www.html-js.com/article/3091" target="_blank" rel="noopener">http://www.html-js.com/article/3091</a></p>
+<p><strong>61.3 在线工具</strong></p>
+<p>在线工具地址</p>
+<p>google在线工具<br><a href="https://link.jianshu.com?t=https://developers.google.com/speed/pagespeed/insights" target="_blank" rel="noopener">https://developers.google.com/speed/pagespeed/insights</a></p>
+<p>阿里测<br><a href="https://link.jianshu.com?t=http://www.alibench.com" target="_blank" rel="noopener">http://www.alibench.com</a></p>
+<p>阿里-免费测试服务<br><a href="https://link.jianshu.com?t=http://itest.aliyun.com" target="_blank" rel="noopener">http://itest.aliyun.com</a></p>
+<p>阿里-F2etest多浏览器兼容性测试解决方案<br><a href="https://link.jianshu.com?t=https://github.com/alibaba/f2etest" target="_blank" rel="noopener">https://github.com/alibaba/f2etest</a></p>
+<p>js性能测试<br><a href="https://link.jianshu.com?t=http://jsperf.com" target="_blank" rel="noopener">http://jsperf.com</a></p>
+<h4 id="62-前端架构"><a href="#62-前端架构" class="headerlink" title="62. 前端架构"></a>62. 前端架构</h4><p>前端架构地址</p>
+<p>技术架构<br><a href="https://link.jianshu.com?t=http://www.zhihu.com/topic/19612641" target="_blank" rel="noopener">http://www.zhihu.com/topic/19612641</a></p>
+<p>前端架构<br><a href="https://link.jianshu.com?t=http://saito.im/note/The-Architecture-of-F2E" target="_blank" rel="noopener">http://saito.im/note/The-Architecture-of-F2E</a></p>
+<p>如何成为前端架构师<br><a href="https://link.jianshu.com?t=http://www.zhihu.com/question/24092572" target="_blank" rel="noopener">http://www.zhihu.com/question/24092572</a></p>
+<p>关于前端架构-张克军<br><a href="https://link.jianshu.com?t=http://hikejun.com/sharing/2010webrebuild/?file=fe-infrastructure.html" target="_blank" rel="noopener">http://hikejun.com/sharing/2010webrebuild/?file=fe-infrastructure.html</a></p>
+<p>百度腾讯offer比较（腾讯游戏VS百度基础架构）<br><a href="https://link.jianshu.com?t=http://www.zhihu.com/question/25583350" target="_blank" rel="noopener">http://www.zhihu.com/question/25583350</a></p>
+<h4 id="63-推荐作品"><a href="#63-推荐作品" class="headerlink" title="63. 推荐作品"></a>63. 推荐作品</h4><p>推荐作品地址</p>
+<p>winter代码片段需要翻墙<br><a href="https://link.jianshu.com?t=https://gist.github.com/wintercn" target="_blank" rel="noopener">https://gist.github.com/wintercn</a></p>
+<p>fgm<br><a href="https://link.jianshu.com?t=http://www.fgm.cc/learn" target="_blank" rel="noopener">http://www.fgm.cc/learn</a></p>
+<p>岑安作品集<br><a href="https://link.jianshu.com?t=https://github.com/hongru/hongru.github.com" target="_blank" rel="noopener">https://github.com/hongru/hongru.github.com</a></p>
+<p>当耐特demo集合<br><a href="https://link.jianshu.com?t=http://kmdjs.github.io" target="_blank" rel="noopener">http://kmdjs.github.io</a></p>
+<p>米空格 js作品<br><a href="https://link.jianshu.com?t=http://www.laoshu133.com/Lab" target="_blank" rel="noopener">http://www.laoshu133.com/Lab</a></p>
+<p>myFocus<br><a href="https://link.jianshu.com?t=http://koen301.github.io" target="_blank" rel="noopener">http://koen301.github.io</a></p>
+<p>SeaJS组件库<br><a href="https://link.jianshu.com?t=http://panxuepeng.github.io/seajslib" target="_blank" rel="noopener">http://panxuepeng.github.io/seajslib</a></p>
+<p>颜海镜作品<br><a href="https://link.jianshu.com?t=http://yanhaijing.com/myProject" target="_blank" rel="noopener">http://yanhaijing.com/myProject</a></p>
+<p>脚儿网作品<br><a href="https://link.jianshu.com?t=http://jo2.org/category/myworks" target="_blank" rel="noopener">http://jo2.org/category/myworks</a></p>
+<p>javascript个人作品<br><a href="https://link.jianshu.com?t=http://www.cnitblog.com/yemoo/category/3107.html" target="_blank" rel="noopener">http://www.cnitblog.com/yemoo/category/3107.html</a></p>
+<p>妙味的雷东升游戏作品<br><a href="https://link.jianshu.com?t=http://bbs.miaov.com/forum.php?mod=viewthread&amp;tid=7790" target="_blank" rel="noopener">http://bbs.miaov.com/forum.php?mod=viewthread&amp;tid=7790</a></p>
+<p>javascript作品集<br><a href="https://link.jianshu.com?t=http://bbs.csdn.net/topics/380227212" target="_blank" rel="noopener">http://bbs.csdn.net/topics/380227212</a></p>
+<p>云五笔，灰度产生生成工具<br><a href="https://link.jianshu.com?t=https://github.com/TooBug/works" target="_blank" rel="noopener">https://github.com/TooBug/works</a></p>
+<p>项目主页<br><a href="https://link.jianshu.com?t=http://koen301.github.io" target="_blank" rel="noopener">http://koen301.github.io</a></p>
+<p>个性的作品主页<br><a href="https://link.jianshu.com?t=http://zaole.net" target="_blank" rel="noopener">http://zaole.net</a></p>
+<p>播放器<br><a href="https://link.jianshu.com?t=http://static.tingall.com/v2/player" target="_blank" rel="noopener">http://static.tingall.com/v2/player</a></p>
+<p>ucren js demos 集<br><a href="https://link.jianshu.com?t=http://ucren.com/blog/demos" target="_blank" rel="noopener">http://ucren.com/blog/demos</a></p>
+<p>智能社<br><a href="https://link.jianshu.com?t=http://www.zhinengshe.com/works_list.html" target="_blank" rel="noopener">http://www.zhinengshe.com/works_list.html</a></p>
+<p>实例陈列架<br><a href="https://link.jianshu.com?t=http://demos.shizuwu.cn" target="_blank" rel="noopener">http://demos.shizuwu.cn</a></p>
+<p>zoye demo<br><a href="https://link.jianshu.com?t=http://zoye.sinaapp.com/demo" target="_blank" rel="noopener">http://zoye.sinaapp.com/demo</a></p>
+<p>王员外<br><a href="https://link.jianshu.com?t=http://lab.yuanwai.wang" target="_blank" rel="noopener">http://lab.yuanwai.wang</a></p>
+<p>平凡<br><a href="https://link.jianshu.com?t=http://pingfan1990.sinaapp.com" target="_blank" rel="noopener">http://pingfan1990.sinaapp.com</a></p>
+<p>jyg 游戏案例<br><a href="https://link.jianshu.com?t=http://www.lovewebgames.com" target="_blank" rel="noopener">http://www.lovewebgames.com</a></p>
+<p>很多jquery插件<br><a href="https://link.jianshu.com?t=http://www.helloweba.com/list.html" target="_blank" rel="noopener">http://www.helloweba.com/list.html</a></p>
+<p>不羁虫 - soJs 作品系列<br><a href="https://link.jianshu.com?t=http://www.bujichong.com/sojs/api/index.html" target="_blank" rel="noopener">http://www.bujichong.com/sojs/api/index.html</a></p>
+<p>frozenui<br><a href="https://link.jianshu.com?t=http://frozenui.github.io/case.html" target="_blank" rel="noopener">http://frozenui.github.io/case.html</a></p>
+<p>黑白棋<br><a href="https://link.jianshu.com?t=http://js-game.github.io/othello" target="_blank" rel="noopener">http://js-game.github.io/othello</a></p>
+<p>fromone<br><a href="https://link.jianshu.com?t=http://yansm.github.io/fromone/index.html" target="_blank" rel="noopener">http://yansm.github.io/fromone/index.html</a></p>
+<h4 id="64-群员作品"><a href="#64-群员作品" class="headerlink" title="64. 群员作品"></a>64. 群员作品</h4><p>群员作品地址</p>
+<p>MDialog 合肥-M.J]<br><a href="https://link.jianshu.com?t=http://demo.webjyh.com" target="_blank" rel="noopener">http://demo.webjyh.com</a></p>
+<p>轮播图 上海－冷静]<br><a href="https://link.jianshu.com?t=http://sandbox.runjs.cn/show/do6zlrrk" target="_blank" rel="noopener">http://sandbox.runjs.cn/show/do6zlrrk</a></p>
+<p>[广州—坚壳]<br><a href="https://link.jianshu.com?t=http://www.replace5.com" target="_blank" rel="noopener">http://www.replace5.com</a></p>
+<p>[成都 - 无痕]　感恩节专题<br><a href="https://link.jianshu.com?t=http://www.seejs.com/demos" target="_blank" rel="noopener">http://www.seejs.com/demos</a></p>
+<p>[球霸天]<br><a href="https://link.jianshu.com?t=http://hacke2.github.io/works" target="_blank" rel="noopener">http://hacke2.github.io/works</a></p>
+<p>[北京-小数]<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/mcat" target="_blank" rel="noopener">http://www.cnblogs.com/mcat</a></p>
+<p>[ptf] Magix 工具<br><a href="https://link.jianshu.com?t=http://thx.github.io/magix" target="_blank" rel="noopener">http://thx.github.io/magix</a></p>
+<p>[杭州-Pft] Magix 基于 MVC 结构和 Hash 驱动的 OPOA（One Page One Application）应用<br><a href="https://link.jianshu.com?t=http://thx.github.io/magix" target="_blank" rel="noopener">http://thx.github.io/magix</a></p>
+<p>[上海-剧中人]-实验室<br><a href="https://link.jianshu.com?t=http://bh-lay.com/labs" target="_blank" rel="noopener">http://bh-lay.com/labs</a></p>
+<p>[上海-豪情 ] 作品集合<br><a href="https://link.jianshu.com?t=http://jikeytang.github.io" target="_blank" rel="noopener">http://jikeytang.github.io</a></p>
+<p>[成都-feeling]<br><a href="https://link.jianshu.com?t=http://guoshan.sinaapp.com" target="_blank" rel="noopener">http://guoshan.sinaapp.com</a></p>
+<p>[上海-angela]<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/liyunhua" target="_blank" rel="noopener">http://www.cnblogs.com/liyunhua</a></p>
+<p>[海南-hank]作品<br><a href="https://link.jianshu.com?t=http://hcjp.github.io/work/demo" target="_blank" rel="noopener">http://hcjp.github.io/work/demo</a></p>
+<p>[上海-张力]博客<br><a href="https://link.jianshu.com?t=https://github.com/yibuyisheng/blogs/issues" target="_blank" rel="noopener">https://github.com/yibuyisheng/blogs/issues</a></p>
+<p>[上海-zenki]作品<br><a href="https://link.jianshu.com?t=http://zkske121.github.io" target="_blank" rel="noopener">http://zkske121.github.io</a></p>
+<p>移动端图案解锁<br><a href="https://link.jianshu.com?t=http://01google.sinaapp.com/locker.html" target="_blank" rel="noopener">http://01google.sinaapp.com/locker.html</a></p>
+<p>[合肥-M.J] - MPreview 移动端图片预览组<br><a href="https://link.jianshu.com?t=https://github.com/webjyh/MPreview.mobile" target="_blank" rel="noopener">https://github.com/webjyh/MPreview.mobile</a></p>
+<p>[合肥-M.J] - Mexam 移动端在线做题组<br><a href="https://link.jianshu.com?t=https://github.com/webjyh/Mexam" target="_blank" rel="noopener">https://github.com/webjyh/Mexam</a></p>
+<p>[北京-苏瑞] - dancer小人<br><a href="https://link.jianshu.com?t=http://letyougo.github.io/dancer" target="_blank" rel="noopener">http://letyougo.github.io/dancer</a></p>
+<p>[上海-玄沐]- 个人网站<br><a href="https://link.jianshu.com?t=http://k.swao.cn/js" target="_blank" rel="noopener">http://k.swao.cn/js</a></p>
+<p>[厦门-二哲]- 个人博客<br><a href="https://link.jianshu.com?t=http://www.meckodo.com" target="_blank" rel="noopener">http://www.meckodo.com</a></p>
+<h4 id="65-国外大牛精品"><a href="#65-国外大牛精品" class="headerlink" title="65. 国外大牛精品"></a>65. 国外大牛精品</h4><p>国外大牛精品地址</p>
+<p>pazguille<br><a href="https://link.jianshu.com?t=http://pazguille.me" target="_blank" rel="noopener">http://pazguille.me</a></p>
+<h4 id="66-简历模板"><a href="#66-简历模板" class="headerlink" title="66. 简历模板"></a>66. 简历模板</h4><p>简历模板地址</p>
+<p>不错的个人简历<br><a href="https://link.jianshu.com?t=http://learnshare.github.io/about/index.html" target="_blank" rel="noopener">http://learnshare.github.io/about/index.html</a></p>
+<p>简历<br><a href="https://link.jianshu.com?t=http://hcy2367.github.io/resume" target="_blank" rel="noopener">http://hcy2367.github.io/resume</a></p>
+<p>张伦<br><a href="https://link.jianshu.com?t=http://ncuey.sinaapp.com/CrispElite/" target="_blank" rel="noopener">http://ncuey.sinaapp.com/CrispElite/</a></p>
+<p>简历<br><a href="https://link.jianshu.com?t=https://github.com/hacke2/ResumeSample" target="_blank" rel="noopener">https://github.com/hacke2/ResumeSample</a></p>
+<p>翁天信<br><a href="https://link.jianshu.com?t=http://blog.dandyweng.com/2013/07/how-my-website-was-created" target="_blank" rel="noopener">http://blog.dandyweng.com/2013/07/how-my-website-was-created</a></p>
+<p>动画方式的简历<br><a href="https://link.jianshu.com?t=http://www.webhek.com/misc/interactive-resume" target="_blank" rel="noopener">http://www.webhek.com/misc/interactive-resume</a></p>
+<p>组件丰富简历<br><a href="https://link.jianshu.com?t=http://www.linqing07.com/resume.html" target="_blank" rel="noopener">http://www.linqing07.com/resume.html</a></p>
+<p>简历池<br><a href="https://link.jianshu.com?t=http://www.mojianli.com/resume/view" target="_blank" rel="noopener">http://www.mojianli.com/resume/view</a></p>
+<p>haorooms博客<br><a href="https://link.jianshu.com?t=http://www.haorooms.com/about" target="_blank" rel="noopener">http://www.haorooms.com/about</a></p>
+<p>Justin Young<br><a href="https://link.jianshu.com?t=http://cv.youngdze.com" target="_blank" rel="noopener">http://cv.youngdze.com</a></p>
+<h4 id="67-面试题"><a href="#67-面试题" class="headerlink" title="67. 面试题"></a>67. 面试题</h4><p>面试题地址</p>
+<p>那几个月在找工作（百度，网易游戏）<br><a href="https://link.jianshu.com?t=http://www.nowcoder.com/discuss/3196" target="_blank" rel="noopener">http://www.nowcoder.com/discuss/3196</a></p>
+<p>2014最新面试题<br><a href="https://link.jianshu.com?t=http://www.html-js.com/article/1743" target="_blank" rel="noopener">http://www.html-js.com/article/1743</a></p>
+<p>阿里前端面试题<br><a href="https://link.jianshu.com?t=http://www.w3cfuns.com/thread-5598563-2-1.html" target="_blank" rel="noopener">http://www.w3cfuns.com/thread-5598563-2-1.html</a></p>
+<p>2016校招内推 – 阿里巴巴前端 – 三面面试经历<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/imwtr/p/4685546.html" target="_blank" rel="noopener">http://www.cnblogs.com/imwtr/p/4685546.html</a></p>
+<p>腾讯面试题<br><a href="https://link.jianshu.com?t=http://www.w3cfuns.com/article-5599657-1-1.html" target="_blank" rel="noopener">http://www.w3cfuns.com/article-5599657-1-1.html</a></p>
+<p>年后跳槽那点事：乐视+金山+360面试之行<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/lvdabao/p/3660707.html" target="_blank" rel="noopener">http://www.cnblogs.com/lvdabao/p/3660707.html</a></p>
+<p>阿里前端面试题上线<br><a href="https://link.jianshu.com?t=http://fatesinger.com/2722.html" target="_blank" rel="noopener">http://fatesinger.com/2722.html</a></p>
+<p>拉勾网js面试题<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/52cik/p/js-question-lg.html" target="_blank" rel="noopener">http://www.cnblogs.com/52cik/p/js-question-lg.html</a></p>
+<p>前端面试<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/allenxing/p/3724382.html" target="_blank" rel="noopener">http://www.cnblogs.com/allenxing/p/3724382.html</a></p>
+<p>Web开发笔试面试题 大全<br><a href="https://link.jianshu.com?t=http://mianshiti.diandian.com" target="_blank" rel="noopener">http://mianshiti.diandian.com</a></p>
+<p>前端开发面试题<br><a href="https://link.jianshu.com?t=http://segmentfault.com/a/1190000000465431" target="_blank" rel="noopener">http://segmentfault.com/a/1190000000465431</a></p>
+<p>2014最新前端面试题<br><a href="https://link.jianshu.com?t=https://github.com/markyun/My-blog/tree/master/Front-end-Developer-Questions" target="_blank" rel="noopener">https://github.com/markyun/My-blog/tree/master/Front-end-Developer-Questions</a></p>
+<p>百度面试<br><a href="https://link.jianshu.com?t=https://github.com/fex-team/interview-questions" target="_blank" rel="noopener">https://github.com/fex-team/interview-questions</a></p>
+<p>面试题<br><a href="https://link.jianshu.com?t=http://www.w3cfuns.com/forum.php?mod=forumdisplay&amp;fid=51&amp;filter=typeid&amp;typeid=177" target="_blank" rel="noopener">http://www.w3cfuns.com/forum.php?mod=forumdisplay&amp;fid=51&amp;filter=typeid&amp;typeid=177</a></p>
+<p>前端工作面试问题<br><a href="https://link.jianshu.com?t=https://github.com/darcyclarke/Front-end-Developer-Interview-Questions/tree/master/Chinese" target="_blank" rel="noopener">https://github.com/darcyclarke/Front-end-Developer-Interview-Questions/tree/master/Chinese</a></p>
+<p>前端开发面试题<br><a href="https://link.jianshu.com?t=http://segmentfault.com/a/1190000000465431" target="_blank" rel="noopener">http://segmentfault.com/a/1190000000465431</a></p>
+<p>5个经典的前端面试问题<br><a href="https://link.jianshu.com?t=http://ourjs.com/detail/5%E4%B8%AA%E7%BB%8F%E5%85%B8%E7%9A%84%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98" target="_blank" rel="noopener">http://ourjs.com/detail/5%E4%B8%AA%E7%BB%8F%E5%85%B8%E7%9A%84%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98</a></p>
+<p>最全前端面试问题及答案总结<br><a href="https://link.jianshu.com?t=http://segmentfault.com/a/1190000002562454" target="_blank" rel="noopener">http://segmentfault.com/a/1190000002562454</a></p>
+<p>如何面试一名前端开发工程师？<br><a href="https://link.jianshu.com?t=http://www.html-js.com/article/Large-search-front-team-column%202961" target="_blank" rel="noopener">http://www.html-js.com/article/Large-search-front-team-column%202961</a></p>
+<p>史上最全 前端开发面试问题及答案整理<br><a href="https://link.jianshu.com?t=https://github.com/hawx1993/Front-end-Interview-questions" target="_blank" rel="noopener">https://github.com/hawx1993/Front-end-Interview-questions</a></p>
+<p>前端实习生面试总结<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/xiaoruo/p/4665163.html" target="_blank" rel="noopener">http://www.cnblogs.com/xiaoruo/p/4665163.html</a></p>
+<p>史上最全 前端开发面试问题及答案整理<br><a href="https://link.jianshu.com?t=https://github.com/hawx1993/Front-end-Interview-questions" target="_blank" rel="noopener">https://github.com/hawx1993/Front-end-Interview-questions</a></p>
+<p>BAT及各大互联网公司2014前端笔试面试题：JavaScript篇<br><a href="https://link.jianshu.com?t=http://blog.jobbole.com/78738" target="_blank" rel="noopener">http://blog.jobbole.com/78738</a></p>
+<p>前端开发面试题大收集<br><a href="https://link.jianshu.com?t=https://github.com/paddingme/Front-end-Web-Development-Interview-Question" target="_blank" rel="noopener">https://github.com/paddingme/Front-end-Web-Development-Interview-Question</a></p>
+<p>收集的前端面试题和答案<br><a href="https://link.jianshu.com?t=https://github.com/qiu-deqing/FE-interview" target="_blank" rel="noopener">https://github.com/qiu-deqing/FE-interview</a></p>
+<p>如何面试前端工程师<br><a href="https://link.jianshu.com?t=http://www.zhihu.com/question/19568008" target="_blank" rel="noopener">http://www.zhihu.com/question/19568008</a></p>
+<p>前端开发面试题<br><a href="https://link.jianshu.com?t=https://github.com/markyun/My-blog/blob/master/Front-end-Developer-Questions/Questions-and-Answers/README.md" target="_blank" rel="noopener">https://github.com/markyun/My-blog/blob/master/Front-end-Developer-Questions/Questions-and-Answers/README.md</a></p>
+<p>牛客网-笔试面经<br><a href="https://link.jianshu.com?t=http://www.nowcoder.com/discuss?type=2" target="_blank" rel="noopener">http://www.nowcoder.com/discuss?type=2</a></p>
+<h4 id="68-iconfont"><a href="#68-iconfont" class="headerlink" title="68. iconfont"></a>68. iconfont</h4><p>iconfont地址</p>
+<p>中文字体<br><a href="https://link.jianshu.com?t=http://www.zhihu.com/question/21253343" target="_blank" rel="noopener">http://www.zhihu.com/question/21253343</a></p>
+<p>淘宝字库<br><a href="https://link.jianshu.com?t=http://iconfont.cn" target="_blank" rel="noopener">http://iconfont.cn</a></p>
+<p>字体<br><a href="https://link.jianshu.com?t=http://mux.alimama.com/fonts" target="_blank" rel="noopener">http://mux.alimama.com/fonts</a></p>
+<p>制作教程<br><a href="https://link.jianshu.com?t=http://iconfont.cn/help/platform.html" target="_blank" rel="noopener">http://iconfont.cn/help/platform.html</a></p>
+<p>zhangxinxu-icommon<br><a href="https://link.jianshu.com?t=http://www.zhangxinxu.com/wordpress/?s=icomoon" target="_blank" rel="noopener">http://www.zhangxinxu.com/wordpress/?s=icomoon</a></p>
+<p>icommon<br><a href="https://link.jianshu.com?t=https://icomoon.io/app" target="_blank" rel="noopener">https://icomoon.io/app</a></p>
+<p>用字体在网页中画ICON图标(推荐教程<br><a href="https://link.jianshu.com?t=http://imooc.com/learn/243" target="_blank" rel="noopener">http://imooc.com/learn/243</a></p>
+<p>字体压缩工具<br><a href="https://link.jianshu.com?t=http://font-spider.org" target="_blank" rel="noopener">http://font-spider.org</a> 感谢初级群　[深圳-小鱼] 的推荐</p>
+<h4 id="69-前端开发工具"><a href="#69-前端开发工具" class="headerlink" title="69. 前端开发工具"></a>69. 前端开发工具</h4><p>前端开发工具地址</p>
+<p>IntelliJ IDEA 简体中文专题教程<br><a href="https://link.jianshu.com?t=https://github.com/judasn/IntelliJ-IDEA-Tutorial" target="_blank" rel="noopener">https://github.com/judasn/IntelliJ-IDEA-Tutorial</a></p>
+<p>Webstorm,InterllIdea,Phpstorm<br><a href="https://link.jianshu.com?t=http://t.cn/8kZZ1Uy" target="_blank" rel="noopener">http://t.cn/8kZZ1Uy</a></p>
+<p>SublimeText<br><a href="https://link.jianshu.com?t=https://github.com/jikeytang/sublime-text" target="_blank" rel="noopener">https://github.com/jikeytang/sublime-text</a></p>
+<p>Atom<br><a href="https://link.jianshu.com?t=https://atom.io" target="_blank" rel="noopener">https://atom.io</a></p>
+<p>visual studio code<br><a href="https://link.jianshu.com?t=https://code.visualstudio.com" target="_blank" rel="noopener">https://code.visualstudio.com</a></p>
+<p>Fiddler地址</p>
+<p>Fiddler调式使用知多少(一深入研究<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/tugenhua0707/p/4623317.html" target="_blank" rel="noopener">http://www.cnblogs.com/tugenhua0707/p/4623317.html</a></p>
+<p>微信fiddle<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/strick/p/4570006.html" target="_blank" rel="noopener">http://www.cnblogs.com/strick/p/4570006.html</a></p>
+<p>微信fiddle<br><a href="https://link.jianshu.com?t=http://gaoboy.com/article/26.html" target="_blank" rel="noopener">http://gaoboy.com/article/26.html</a></p>
+<h4 id="70-Chrome"><a href="#70-Chrome" class="headerlink" title="70. Chrome"></a>70. Chrome</h4><p>Chrome地址</p>
+<p>Google Chrome 官方<br><a href="https://link.jianshu.com?t=https://developer.chrome.com/devtools" target="_blank" rel="noopener">https://developer.chrome.com/devtools</a></p>
+<p>Chrome - 基础<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/constantince/p/4565261.html" target="_blank" rel="noopener">http://www.cnblogs.com/constantince/p/4565261.html</a></p>
+<p>Chrome - 进阶<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/constantince/p/4579121.html" target="_blank" rel="noopener">http://www.cnblogs.com/constantince/p/4579121.html</a></p>
+<p>Chrome - 性能<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/constantince/p/4585983.html" target="_blank" rel="noopener">http://www.cnblogs.com/constantince/p/4585983.html</a></p>
+<p>Chrome - 性能进阶<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/constantince/p/4607497.html" target="_blank" rel="noopener">http://www.cnblogs.com/constantince/p/4607497.html</a></p>
+<p>Chrome - 移动<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/constantince/p/4624241.html" target="_blank" rel="noopener">http://www.cnblogs.com/constantince/p/4624241.html</a></p>
+<p>Chrome - 使用技巧<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/liyunhua/p/4544738.html" target="_blank" rel="noopener">http://www.cnblogs.com/liyunhua/p/4544738.html</a></p>
+<p>Chrome - Console控制台不完全指南<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/Wayou/p/chrome-console-tips-and-tricks.html" target="_blank" rel="noopener">http://www.cnblogs.com/Wayou/p/chrome-console-tips-and-tricks.html</a></p>
+<p>Chrome - Workspace使浏览器变成IDE<br><a href="https://link.jianshu.com?t=http://c7sky.com/chrome-devtools-workspace.html" target="_blank" rel="noopener">http://c7sky.com/chrome-devtools-workspace.html</a></p>
+<p>network面板<br><a href="https://link.jianshu.com?t=http://www.html-js.com/article/Nothing-blind%202975" target="_blank" rel="noopener">http://www.html-js.com/article/Nothing-blind%202975</a></p>
+<p>chrome开发工具快捷键<br><a href="https://link.jianshu.com?t=http://anti-code.com/devtools-cheatsheet" target="_blank" rel="noopener">http://anti-code.com/devtools-cheatsheet</a></p>
+<p>chrome调试工具常用功能整理<br><a href="https://link.jianshu.com?t=http://www.html-js.com/article/2327" target="_blank" rel="noopener">http://www.html-js.com/article/2327</a></p>
+<p>Chrome 开发工具 Workspace 使用<br><a href="https://link.jianshu.com?t=http://www.iinterest.net/2014/05/09/chrome-dev-tool-workspace" target="_blank" rel="noopener">http://www.iinterest.net/2014/05/09/chrome-dev-tool-workspace</a></p>
+<p>Chrome神器Vimium快捷键学习记录<br><a href="https://link.jianshu.com?t=http://www.cppblog.com/deercoder/archive/2011/10/22/158886.html" target="_blank" rel="noopener">http://www.cppblog.com/deercoder/archive/2011/10/22/158886.html</a></p>
+<p>sass调试-w3cplus<br><a href="https://link.jianshu.com?t=http://www.w3cplus.com/sassguide/debug.html" target="_blank" rel="noopener">http://www.w3cplus.com/sassguide/debug.html</a></p>
+<p>如何更专业的使用Chrome开发者工具-w3cplus<br><a href="https://link.jianshu.com?t=http://www.w3cplus.com/tools/how-to-use-chrome-devtools-like-a-pro.html" target="_blank" rel="noopener">http://www.w3cplus.com/tools/how-to-use-chrome-devtools-like-a-pro.html</a></p>
+<p>chrome调试canvas<br><a href="https://link.jianshu.com?t=http://sentsin.com/web/253.html" target="_blank" rel="noopener">http://sentsin.com/web/253.html</a></p>
+<p>chrome profiles1<br><a href="https://link.jianshu.com?t=https://developer.chrome.com/devtools/index" target="_blank" rel="noopener">https://developer.chrome.com/devtools/index</a></p>
+<p>chrome profiles2<br><a href="https://link.jianshu.com?t=http://h5dev.uc.cn/article-25-1.html" target="_blank" rel="noopener">http://h5dev.uc.cn/article-25-1.html</a></p>
+<p>chrome profiles3<br><a href="https://link.jianshu.com?t=http://www.oschina.net/translate/performance-optimisation-with-timeline-profiles" target="_blank" rel="noopener">http://www.oschina.net/translate/performance-optimisation-with-timeline-profiles</a></p>
+<p>chrome移动版调试<br><a href="https://link.jianshu.com?t=https://developer.chrome.com/devtools/docs/mobile-emulation" target="_blank" rel="noopener">https://developer.chrome.com/devtools/docs/mobile-emulation</a></p>
+<p>chrome调试<br><a href="https://link.jianshu.com?t=http://ued.taobao.org/blog/2012/06/debug-with-chrome-dev-tool" target="_blank" rel="noopener">http://ued.taobao.org/blog/2012/06/debug-with-chrome-dev-tool</a></p>
+<p>chrome的调试<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/QLeelulu/archive/2011/08/28/2156402.html" target="_blank" rel="noopener">http://www.cnblogs.com/QLeelulu/archive/2011/08/28/2156402.html</a></p>
+<p>chrome console 命令详解<br><a href="https://link.jianshu.com?t=https://developer.chrome.com/devtools/docs/commandline-api" target="_blank" rel="noopener">https://developer.chrome.com/devtools/docs/commandline-api</a></p>
+<p>查看事件绑定1<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/leonkao/p/3809655.html" target="_blank" rel="noopener">http://www.cnblogs.com/leonkao/p/3809655.html</a></p>
+<p>查看事件绑定2<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/xiaoyao2011/p/3447421.html" target="_blank" rel="noopener">http://www.cnblogs.com/xiaoyao2011/p/3447421.html</a></p>
+<p>神器——Chrome开发者工具(一<br><a href="https://link.jianshu.com?t=http://segmentfault.com/a/1190000000683599" target="_blank" rel="noopener">http://segmentfault.com/a/1190000000683599</a></p>
+<p>奇趣百科性能优化(Chrome DevTools 中的 Timeline Profils 等工具使用介绍<br><a href="https://link.jianshu.com?t=https://xinranliu.me/2015-05-22-qiqu-performance" target="_blank" rel="noopener">https://xinranliu.me/2015-05-22-qiqu-performance</a></p>
+<p>chrome 开发者工具的 15 个小技巧<br><a href="https://link.jianshu.com?t=http://frontenddev.org/link/15-tips-of-chrome-developer-tools.html" target="_blank" rel="noopener">http://frontenddev.org/link/15-tips-of-chrome-developer-tools.html</a></p>
+<p>Chrome开发者工具不完全指南<br><a href="https://link.jianshu.com?t=http://1ke.co/course/361" target="_blank" rel="noopener">http://1ke.co/course/361</a></p>
+<p>Chrome 开发者工具使用技巧<br><a href="https://link.jianshu.com?t=http://segmentfault.com/a/1190000003882567" target="_blank" rel="noopener">http://segmentfault.com/a/1190000003882567</a></p>
+<h4 id="71-Firebug"><a href="#71-Firebug" class="headerlink" title="71. Firebug"></a>71. Firebug</h4><p>Firebug地址</p>
+<p>firebug视频教程<br><a href="https://link.jianshu.com?t=http://www.imooc.com/learn/137" target="_blank" rel="noopener">http://www.imooc.com/learn/137</a></p>
+<p>firefox 模拟器<br><a href="https://link.jianshu.com?t=https://developer.mozilla.org/zh-CN/docs/Tools/WebIDE" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Tools/WebIDE</a></p>
+<p>console.log 命令详解<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/ctriphire/p/4116207.html" target="_blank" rel="noopener">http://www.cnblogs.com/ctriphire/p/4116207.html</a></p>
+<p>Firebug入门指南<br><a href="https://link.jianshu.com?t=http://www.ruanyifeng.com/blog/2008/06/firebug_tutorial.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2008/06/firebug_tutorial.html</a></p>
+<p>Firebug控制台详解<br><a href="https://link.jianshu.com?t=http://www.ruanyifeng.com/blog/2011/03/firebug_console_tutorial.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2011/03/firebug_console_tutorial.html</a></p>
+<h4 id="72-移动-微信调试"><a href="#72-移动-微信调试" class="headerlink" title="72. 移动,微信调试"></a>72. 移动,微信调试</h4><p>移动,微信调试地址</p>
+<p>浏览器端调试安卓<br><a href="https://link.jianshu.com?t=https://openstf.github.io" target="_blank" rel="noopener">https://openstf.github.io</a></p>
+<p>移动端前端开发调试<br><a href="https://link.jianshu.com?t=http://yujiangshui.com/multidevice-frontend-debug" target="_blank" rel="noopener">http://yujiangshui.com/multidevice-frontend-debug</a></p>
+<p>使用 Chrome 远程调试 Android 设备<br><a href="https://link.jianshu.com?t=https://github.com/yujiangshui/CN-Chrome-DevTools/blob/remote-debugging/md/Use-Tools/remote-debugging.md" target="_blank" rel="noopener">https://github.com/yujiangshui/CN-Chrome-DevTools/blob/remote-debugging/md/Use-Tools/remote-debugging.md</a></p>
+<p>mac移动端调试<br><a href="https://link.jianshu.com?t=http://plus.uc.cn/document/webapp/doc5.html" target="_blank" rel="noopener">http://plus.uc.cn/document/webapp/doc5.html</a></p>
+<p>mac移动端调试<br><a href="https://link.jianshu.com?t=http://www.mihtool.com" target="_blank" rel="noopener">http://www.mihtool.com</a></p>
+<p>无线调试攻略<br><a href="https://link.jianshu.com?t=http://thx.github.io/mobile/debugging-in-mobile" target="_blank" rel="noopener">http://thx.github.io/mobile/debugging-in-mobile</a></p>
+<p>无线调试攻略<br><a href="https://link.jianshu.com?t=http://yanhaijing.com/mobile/2014/12/17/web-debug-for-mobile" target="_blank" rel="noopener">http://yanhaijing.com/mobile/2014/12/17/web-debug-for-mobile</a></p>
+<p>屌爆了,完美调试 微信webview(x5<br><a href="https://www.jianshu.com/p/ccf124f1f74b" target="_blank" rel="noopener">http://www.jianshu.com/p/ccf124f1f74b</a></p>
+<p>微信调试的那些事<br><a href="https://link.jianshu.com?t=http://liyaodong.com/2015/07/06/%E5%BE%AE%E4%BF%A1%E8%B0%83%E8%AF%95%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B" target="_blank" rel="noopener">http://liyaodong.com/2015/07/06/%E5%BE%AE%E4%BF%A1%E8%B0%83%E8%AF%95%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B</a></p>
+<p>远程console<br><a href="https://link.jianshu.com?t=http://jsconsole.com" target="_blank" rel="noopener">http://jsconsole.com</a></p>
+<p>微信调试工具<br><a href="https://link.jianshu.com?t=http://blog.qqbrowser.cc" target="_blank" rel="noopener">http://blog.qqbrowser.cc</a></p>
+<p>各种真机远程调试方法汇总<br><a href="https://link.jianshu.com?t=https://github.com/jieyou/remote_inspect_web_on_real_device" target="_blank" rel="noopener">https://github.com/jieyou/remote_inspect_web_on_real_device</a></p>
+<h4 id="73-iOS-Simulator"><a href="#73-iOS-Simulator" class="headerlink" title="73. iOS Simulator"></a>73. iOS Simulator</h4><p>iOS Simulator地址</p>
+<p>Simulator<br><a href="https://link.jianshu.com?t=https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/iOS_Simulator_Guide/Introduction/Introduction.html" target="_blank" rel="noopener">https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/iOS_Simulator_Guide/Introduction/Introduction.html</a></p>
+<p>Xcode中的iOS模拟器(iOS Simulator的介绍和使用心得<br><a href="https://link.jianshu.com?t=http://www.crifan.com/intro_ios_simulator_in_xcode_and_usage_summary" target="_blank" rel="noopener">http://www.crifan.com/intro_ios_simulator_in_xcode_and_usage_summary</a></p>
+<h4 id="74-img"><a href="#74-img" class="headerlink" title="74. img"></a>74. img</h4><p>img地址</p>
+<p>loading img<br><a href="https://link.jianshu.com?t=http://preloaders.net/en/circular" target="_blank" rel="noopener">http://preloaders.net/en/circular</a></p>
+<p>智图-图片优化平台<br><a href="https://link.jianshu.com?t=http://zhitu.isux.us" target="_blank" rel="noopener">http://zhitu.isux.us</a></p>
+<p>在线png优化<br><a href="https://link.jianshu.com?t=https://tinypng.com" target="_blank" rel="noopener">https://tinypng.com</a></p>
+<h4 id="75-生成二维码"><a href="#75-生成二维码" class="headerlink" title="75. 生成二维码"></a>75. 生成二维码</h4><p>生成二维码地址</p>
+<p>生成二维码<br><a href="https://link.jianshu.com?t=http://cli.im" target="_blank" rel="noopener">http://cli.im</a></p>
+<h4 id="76-浏览器同步"><a href="#76-浏览器同步" class="headerlink" title="76. 浏览器同步"></a>76. 浏览器同步</h4><p>浏览器同步地址</p>
+<p>puer<br><a href="https://link.jianshu.com?t=https://github.com/leeluolee/puer" target="_blank" rel="noopener">https://github.com/leeluolee/puer</a></p>
+<p>liveReload<br><a href="https://link.jianshu.com?t=http://livereload.com" target="_blank" rel="noopener">http://livereload.com</a></p>
+<p>f5<br><a href="https://link.jianshu.com?t=http://getf5.com" target="_blank" rel="noopener">http://getf5.com</a></p>
+<p>File Watchers<br><a href="https://link.jianshu.com?t=http://geek100.com/2608" target="_blank" rel="noopener">http://geek100.com/2608</a></p>
+<h4 id="77-在线PPT制作"><a href="#77-在线PPT制作" class="headerlink" title="77. 在线PPT制作"></a>77. 在线PPT制作</h4><p>在线PPT制作地址</p>
+<p>nodePPT<br><a href="https://link.jianshu.com?t=http://js8.in/2013/11/16/%E6%8E%A8%E8%8D%90nodeppt%EF%BC%9A%E4%BD%BF%E7%94%A8markdown%E8%AF%AD%E6%B3%95%E6%9D%A5%E5%86%99%E7%BD%91%E9%A1%B5ppt" target="_blank" rel="noopener">http://js8.in/2013/11/16/%E6%8E%A8%E8%8D%90nodeppt%EF%BC%9A%E4%BD%BF%E7%94%A8markdown%E8%AF%AD%E6%B3%95%E6%9D%A5%E5%86%99%E7%BD%91%E9%A1%B5ppt</a></p>
+<p>PPT<br><a href="https://link.jianshu.com?t=https://github.com/ksky521/nodePPT" target="_blank" rel="noopener">https://github.com/ksky521/nodePPT</a></p>
+<p>reveal<br><a href="https://link.jianshu.com?t=https://github.com/hakimel/reveal.js" target="_blank" rel="noopener">https://github.com/hakimel/reveal.js</a></p>
+<p>slippy<br><a href="https://link.jianshu.com?t=https://github.com/Seldaek/slippy" target="_blank" rel="noopener">https://github.com/Seldaek/slippy</a></p>
+<h4 id="78-前端导航网站"><a href="#78-前端导航网站" class="headerlink" title="78. 前端导航网站"></a>78. 前端导航网站</h4><p>前端导航网站地址</p>
+<p>界面清爽的前端导航<br><a href="https://link.jianshu.com?t=http://uxbees.com/index.html" target="_blank" rel="noopener">http://uxbees.com/index.html</a></p>
+<p>前端导航<br><a href="https://link.jianshu.com?t=http://whycss.com" target="_blank" rel="noopener">http://whycss.com</a></p>
+<p>前端网址导航<br><a href="https://link.jianshu.com?t=http://www.daqianduan.com/nav" target="_blank" rel="noopener">http://www.daqianduan.com/nav</a></p>
+<p>前端名录<br><a href="https://link.jianshu.com?t=http://sentsin.com/daohang" target="_blank" rel="noopener">http://sentsin.com/daohang</a></p>
+<p>前端导航<br><a href="https://link.jianshu.com?t=http://123.jser.us" target="_blank" rel="noopener">http://123.jser.us</a></p>
+<p>前端开发资源<br><a href="https://link.jianshu.com?t=http://www.css88.com/nav" target="_blank" rel="noopener">http://www.css88.com/nav</a></p>
+<p>网址导航<br><a href="https://link.jianshu.com?t=http://www.haourl.cn" target="_blank" rel="noopener">http://www.haourl.cn</a></p>
+<p>前端开发仓库 - 众多效果的收集地<br><a href="https://link.jianshu.com?t=http://code.ciaoca.com" target="_blank" rel="noopener">http://code.ciaoca.com</a></p>
+<p>前端资源导航<br><a href="https://link.jianshu.com?t=https://github.com/jnoodle/f2e-collect" target="_blank" rel="noopener">https://github.com/jnoodle/f2e-collect</a></p>
+<p>F2E 前端导航<br><a href="https://link.jianshu.com?t=http://f2e.im/static/pages/nav/index.html" target="_blank" rel="noopener">http://f2e.im/static/pages/nav/index.html</a></p>
+<h4 id="79-常用CDN"><a href="#79-常用CDN" class="headerlink" title="79. 常用CDN"></a>79. 常用CDN</h4><p>常用CDN地址</p>
+<p>新浪CDN<br><a href="https://link.jianshu.com?t=http://lib.sinaapp.com" target="_blank" rel="noopener">http://lib.sinaapp.com</a></p>
+<p>百度静态资源公共库<br><a href="https://link.jianshu.com?t=http://cdn.code.baidu.com" target="_blank" rel="noopener">http://cdn.code.baidu.com</a></p>
+<p>360网站卫士常用前端公共库CDN服务<br><a href="https://link.jianshu.com?t=http://libs.useso.com" target="_blank" rel="noopener">http://libs.useso.com</a></p>
+<p>Bootstrap中文网开源项目免费 CDN 服务<br><a href="https://link.jianshu.com?t=http://www.bootcdn.cn" target="_blank" rel="noopener">http://www.bootcdn.cn</a></p>
+<p>开放静态文件 CDN - 七牛<br><a href="https://link.jianshu.com?t=http://staticfile.org" target="_blank" rel="noopener">http://staticfile.org</a></p>
+<p>CDN加速 - jq22<br><a href="https://link.jianshu.com?t=http://www.jq22.com/cdn" target="_blank" rel="noopener">http://www.jq22.com/cdn</a></p>
+<p>jQuery CDN<br><a href="https://link.jianshu.com?t=http://code.jquery.com" target="_blank" rel="noopener">http://code.jquery.com</a></p>
+<p>Google jQuery CDN<br><a href="https://link.jianshu.com?t=http://www.google-jquery-cdn.com" target="_blank" rel="noopener">http://www.google-jquery-cdn.com</a></p>
+<p>微软CDN<br><a href="https://link.jianshu.com?t=http://www.asp.net/ajax/cdn" target="_blank" rel="noopener">http://www.asp.net/ajax/cdn</a></p>
+<h4 id="80-Git"><a href="#80-Git" class="headerlink" title="80. Git"></a>80. Git</h4><p>Git地址</p>
+<p>git-scm<br><a href="https://link.jianshu.com?t=http://git-scm.com" target="_blank" rel="noopener">http://git-scm.com</a></p>
+<p>廖雪峰-Git教程<br><a href="https://link.jianshu.com?t=http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="noopener">http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000</a></p>
+<p>git-for-windows<br><a href="https://link.jianshu.com?t=https://git-for-windows.github.io" target="_blank" rel="noopener">https://git-for-windows.github.io</a></p>
+<p>GitHub 添加 SSH keys<br><a href="https://link.jianshu.com?t=http://daemon369.github.io/git/2015/03/10/add-ssh-keys-for-github" target="_blank" rel="noopener">http://daemon369.github.io/git/2015/03/10/add-ssh-keys-for-github</a></p>
+<p>gogithub<br><a href="https://link.jianshu.com?t=http://www.worldhello.net/gotgithub/index.html" target="_blank" rel="noopener">http://www.worldhello.net/gotgithub/index.html</a></p>
+<p>git常规命令练习<br><a href="https://link.jianshu.com?t=http://pcottle.github.io/learnGitBranching" target="_blank" rel="noopener">http://pcottle.github.io/learnGitBranching</a></p>
+<p>git的资料整理<br><a href="https://link.jianshu.com?t=https://github.com/xirong/my-git" target="_blank" rel="noopener">https://github.com/xirong/my-git</a></p>
+<p>我所记录的git命令（非常实用）<br><a href="https://link.jianshu.com?t=http://www.cnblogs.com/fanfan259/p/4810517.html" target="_blank" rel="noopener">http://www.cnblogs.com/fanfan259/p/4810517.html</a></p>
+<p>企业开发git工作流模式探索部分休整<br><a href="https://link.jianshu.com?t=https://github.com/xirong/my-git/blob/master/git-workflow-tutorial.md" target="_blank" rel="noopener">https://github.com/xirong/my-git/blob/master/git-workflow-tutorial.md</a></p>
+<p>GitHub 漫游指南<br><a href="https://link.jianshu.com?t=https://github.com/phodal/github-roam" target="_blank" rel="noopener">https://github.com/phodal/github-roam</a></p>
+<p>GitHub秘籍<br><a href="https://link.jianshu.com?t=https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.zh-cn.md" target="_blank" rel="noopener">https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.zh-cn.md</a></p>
+<p>使用git和github进行协同开发流程<br><a href="https://link.jianshu.com?t=http://livoras.com/post/28" target="_blank" rel="noopener">http://livoras.com/post/28</a></p>
+<p>动画方式练习git<br><a href="https://link.jianshu.com?t=http://onlywei.github.io/explain-git-with-d3" target="_blank" rel="noopener">http://onlywei.github.io/explain-git-with-d3</a></p>
+
+                <hr>
+                
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2019/03/18/阿里云CentOS使用PM2部署Node-js开发环境/" data-toggle="tooltip" data-placement="top" title="阿里云CentOS使用PM2部署Node.js开发环境">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2018/12/20/React图片转base64/" data-toggle="tooltip" data-placement="top" title="React图片转base64">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+
+                
+
+
+                <!--加入新的评论系统-->
+                
+
+                
+
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-综合类"><span class="toc-text">1.综合类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-入门类"><span class="toc-text">2.入门类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-效果类"><span class="toc-text">3.效果类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-工具类"><span class="toc-text">4.工具类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-慕课专题"><span class="toc-text">5.慕课专题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-周报类"><span class="toc-text">6.周报类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-开发中心"><span class="toc-text">7.开发中心</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-综合搜索"><span class="toc-text">8.综合搜索</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#9-综合API"><span class="toc-text">9.综合API</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#10-jQuery"><span class="toc-text">10.jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#11-Ecmascript"><span class="toc-text">11.Ecmascript</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#12-Js-template"><span class="toc-text">12.Js template</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#13-弹出层"><span class="toc-text">13.弹出层</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#14-CSS"><span class="toc-text">14.CSS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#15-Angularjs"><span class="toc-text">15.Angularjs</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#16-React"><span class="toc-text">16.React</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#17-移动端API"><span class="toc-text">17.移动端API</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#18-框架"><span class="toc-text">18. 框架</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#19-avalon"><span class="toc-text">19.avalon</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#20-Requriejs"><span class="toc-text">20.Requriejs</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#21-Seajs"><span class="toc-text">21.Seajs</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#22-Less-sass"><span class="toc-text">22.Less,sass</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#23-Markdown"><span class="toc-text">23. Markdown</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#24-D3"><span class="toc-text">24. D3</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#25-兼容性"><span class="toc-text">25. 兼容性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#26-UI相关"><span class="toc-text">26. UI相关</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#27-HTTP"><span class="toc-text">27. HTTP</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#28-其它API"><span class="toc-text">28. 其它API</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#29-图表类"><span class="toc-text">29. 图表类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#30-vue"><span class="toc-text">30. vue</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#31-正则"><span class="toc-text">31. 正则</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#32-ionic"><span class="toc-text">32. ionic</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#33-其它"><span class="toc-text">33. 其它</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#34-开发规范"><span class="toc-text">34.开发规范</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#35-各大公司开源项目"><span class="toc-text">35. 各大公司开源项目</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#36-生活常用"><span class="toc-text">36. 生活常用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#37-算法"><span class="toc-text">37. 算法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#38-移动端"><span class="toc-text">38. 移动端</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#39-JSON"><span class="toc-text">39. JSON</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#40-Html5"><span class="toc-text">40. Html5</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#41-CSS"><span class="toc-text">41. CSS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#42-焦点图"><span class="toc-text">42. 焦点图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#43-Ext-EasyUI-J-UI-及其它各种UI方案"><span class="toc-text">43. Ext, EasyUI, J-UI 及其它各种UI方案</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#44-页面-社会化-分享功能"><span class="toc-text">44. 页面 社会化 分享功能</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#45-富文本编辑器"><span class="toc-text">45. 富文本编辑器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#46-日历"><span class="toc-text">46. 日历</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#47-综合效果搜索平台"><span class="toc-text">47. 综合效果搜索平台</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#48-前端工程化"><span class="toc-text">48. 前端工程化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#48-2-Gulp"><span class="toc-text">48.2 Gulp</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#48-3-Grunt"><span class="toc-text">48.3 Grunt</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#48-4-Fis"><span class="toc-text">48.4 Fis</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#49-轮播图"><span class="toc-text">49. 轮播图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#50-文件上传"><span class="toc-text">50. 文件上传</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#51-模拟select"><span class="toc-text">51. 模拟select</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#52-取色插件"><span class="toc-text">52. 取色插件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#53-城市联动"><span class="toc-text">53. 城市联动</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#54-剪贴板"><span class="toc-text">54. 剪贴板</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#55-简繁转换"><span class="toc-text">55. 简繁转换</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#56-表格-Grid"><span class="toc-text">56. 表格 Grid</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#57-在线演示"><span class="toc-text">57. 在线演示</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#58-播放器"><span class="toc-text">58. 播放器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#59-粒子动画"><span class="toc-text">59. 粒子动画</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#60-Nodejs"><span class="toc-text">60. Nodejs</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#61-性能优化"><span class="toc-text">61. 性能优化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#62-前端架构"><span class="toc-text">62. 前端架构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#63-推荐作品"><span class="toc-text">63. 推荐作品</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#64-群员作品"><span class="toc-text">64. 群员作品</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#65-国外大牛精品"><span class="toc-text">65. 国外大牛精品</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#66-简历模板"><span class="toc-text">66. 简历模板</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#67-面试题"><span class="toc-text">67. 面试题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#68-iconfont"><span class="toc-text">68. iconfont</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#69-前端开发工具"><span class="toc-text">69. 前端开发工具</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#70-Chrome"><span class="toc-text">70. Chrome</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#71-Firebug"><span class="toc-text">71. Firebug</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#72-移动-微信调试"><span class="toc-text">72. 移动,微信调试</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#73-iOS-Simulator"><span class="toc-text">73. iOS Simulator</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#74-img"><span class="toc-text">74. img</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#75-生成二维码"><span class="toc-text">75. 生成二维码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#76-浏览器同步"><span class="toc-text">76. 浏览器同步</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#77-在线PPT制作"><span class="toc-text">77. 在线PPT制作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#78-前端导航网站"><span class="toc-text">78. 前端导航网站</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#79-常用CDN"><span class="toc-text">79. 常用CDN</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#80-Git"><span class="toc-text">80. Git</span></a></li></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5 class="text-center">
+                        <a href="/tags/">FEATURED TAGS</a>
+                    </h5>
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#React" title="React">React</a>
+                        
+                        <a class="tag" href="/tags/#JavaScript" title="JavaScript">JavaScript</a>
+                        
+                        <a class="tag" href="/tags/#HTML5" title="HTML5">HTML5</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <div style="margin-top: 20px;">
+                    <h5 class="text-center">FRIENDS</h5>
+                    <ul class="list-inline text-center">
+                        
+                        <li><a href="http://www.runoob.com/">菜鸟教程</a></li>
+                        
+                        <li><a href="https://www.iconfont.cn/">iconfont</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+
+                
+                    <li>
+                        <a target="_blank" href="/1993/01/09/关于我/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-wechat fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="/1993/01/09/关于我/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-qq fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+
+                
+                    <li>
+                        <a target="_blank" href="https://weibo.com/haohao100">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank" href="https://github.com/jchsir">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; JCH 2019
+                    <br>
+                    <!-- <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span> -->
+                    <!-- <br> -->
+                    <span style="font-size: 12px;">世界很美 而你正好有空</span>
+                    <!-- <a href="https://haojen.github.io/">Haojen Ma</a> -->
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://haojen.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="http://mapp.alicdn.com//1544621171664ngRAjD3dMdm9U9v.png">
+</body>
+
+</html>
